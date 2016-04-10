@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading">Modeling</h2>
+      <h3 class="section-subheading text-muted">Applying Machine Learning to Determine<br />Demographic Features Most Associated with EV Ownership</h3>
+    </div>
+  </div>
+  <div class="row">
+    <h3>Initial Feature Selection and Model Evaluation</h3>
+    <br />
+    <p>The urban areas data set contains aggregated EV charging stations for 3,600 urban areas and we used the raw station count as our dependent variable or label and turned the modeling exercise into a classic supervised learning problem. The predictors or independent variables are the demographic covariates from the Census American Community Survey data and EV incentives. The diagram below illustrates our modeling methodology and approach.</p>
+    <br />
+    <div class="row text-center"><img src="../modelingmethodology/modeling_methodology.png" alt="" width="750"></div>
+    <br />
+    <p>We took two parallel paths, a path for finding the best algorithm for the problem with an initial feature set and another path for systematic feature search and optimization, to arrive at an optimal model. We selected an initial set of the features from the original set of 73 demographic features, based on our ‘gut’ instinct and recent EV surveys. The initial features selected include number of high-income households, education levels (e.g., % of college graduates), home ownership, and the populations of different age groups.</p>
+    <p>Our initial models contained 10 and 25 features and we ran the following 4 different learners, two linear learners: linear regression and logistic regression, and two ensemble learners: Random Forest and extremely randomized decision trees. To evaluate the different learners, we first examined the various scores found that the average accuracy and the R^2 scores were most useful. We then visually examined the predicted charging station counts vs. the actual charing station counts.</p>
+    <div class="row text-center"><img src="../modelingmethodology/table.png" alt="" width="500"></div>
+    <br />
+    <br />
+    <p>Our visual examination was critical for us to quickly assess different learners to choose the best algorithm for the problem. Overfitting was obvious visually: when the predicted vs actual station counts for training set all line up diagonally while the predicted vs. actual counts for the test set scatter or cluster above or below the diagonal line, we know that the algorithm overfitted the training set. We found that ensemble learners were more accurate than the linear learners by 14-27%. Random Forest was the best learner based on our evaluation criteria.
+    </p>
+    <div class="row text-center"><img src="../modelingmethodology/Fig-LinearRegression.png" alt="" width="500"><img src="../modelingmethodology/Fig-LogisticRegression.png" alt="" width="500"></div>
+    <div class="row text-center"><img src="../modelingmethodology/Fig-RandomForest.png" alt="" width="500"><img src="../modelingmethodology/Fig-ExtraTrees.png" alt="" width="500"></div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="row"></div>
+    <div class="col-lg-4 "></div>
+    <div class="col-lg-4 "></div>
+  </div>
+  <h3>Feature Selection and Minimal Optimal Model</h3>
+  <p>Our goal is to discover demographic attributes that are not obviously correlated with EV prevalence or interest. We used a novel feature selection algorithm proposed by Kursa and Rudnicki (http://www.jstatsoft.org/v36/i11/paper). The algorithm iteratively eliminates features via statistical tests. We used the Python implemention by Daniel Homola (https://bitbucket.org/danielhomola/boruta_py/). Running the selection algorithm for all available features consistently returned a set of 9 or so attributes which provided us with valuable insights. Many of the significant features returned by the search algorithm coincide with our initial instinct. Features such as the number of households with income over $100,000, the populations of young people in the 25 to 34 year old and the 35 to 44 year old age groups, and total number of college graduates, showed up consistently in the outputs. We confirmed that the raw number of EV charging stations did not track population and other features were more significant for EV prevalence. A result that we were hoping to get from the start!</p>
+  <p>Combining the feature search outputs and that from the ad-hoc modeling, we selected 14 features for our “minimal optimal” feature set to feed into a Random Forest model. Theoretically, Occam’s Razor calls for models that contain all that is necessary but nothing more. Practically, a minimal optimal model is attractive for it provides the best explanation of the data and also has the most predictive power but with the smallest set of relevant features. Our final model has excellent predictive power with scores >85% and is also not sensitive to the number of features as long as the most significant features such as, the households of the highest income brackets and the population of young age groups, are included. We used the output from our optimal model to predict the “best markets” for Faraday Motor’s marketing division.
+  </p>
+  <div class="row text-center"><img src="../modelingmethodology/Fig-RandomForest-Optimal.png" alt="" width="500"></div>
+</div>

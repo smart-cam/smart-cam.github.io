@@ -1,0 +1,263 @@
+<link href="/portal/pages/../css/bootstrap-slider.css" rel="stylesheet">
+<script src="/portal/pages/../js/bootstrap-slider.min.js"></script>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+<style type="text/css">
+
+</style>
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Lead Rating</h1>
+
+
+            <form id="leads" method="post" class="form-horizontal">
+
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Income</label>
+                    <div class="col-xs-9">
+                        <div class="btn-group" data-toggle="buttons">
+                            <input id="income" type="text" name="income" />
+                            <span class="label label-default">$<span id="incomeSliderVal">80</span>K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Age</label>
+                    <div class="col-xs-9">
+                        <div class="btn-group" data-toggle="buttons">
+                            <input id="age" type="text" name="age" />
+                            <span class="label label-default"><span id="ageSliderVal">80</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Gender</label>
+                    <div class="col-xs-9">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default active">
+                                <input type="radio" name="gender" value="M" checked="True" /> Male
+                            </label>
+                            <label class="btn btn-default">
+                                <input type="radio" name="gender" value="F" /> Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Bachelor degree or higher</label>
+                    <div class="col-xs-9">
+                        <input id="edu" type="checkbox" name="edu" checked data-toggle="toggle"  data-on="Yes" data-off="No">
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">Owns Home</label>
+                    <div class="col-xs-9">
+                        <input id="homeown" type="checkbox" name="homeown" checked data-toggle="toggle"  data-on="Yes" data-off="No">
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">State</label>
+                    <div class="col-xs-3">
+                        <select class="form-control" id="state" name="state">
+                            <option value="AK">Alaska</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DC">District of Columbia</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="IA">Iowa</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MD">Maryland</option>
+                            <option value="ME">Maine</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MT">Montana</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NY">New York</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VA">Virginia</option>
+                            <option value="VT">Vermont</option>
+                            <option value="WA">Washington</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+
+            </form>
+            <div class="jumbotron">
+              <h1 class="text-center"><span id="rating"></span></h1>
+          </div>
+
+
+
+      </div>
+
+
+  </div>
+</div>
+
+
+<script type="text/javascript">
+    $("#income").slider({
+        id: "incomeSlider",
+        max: 210,
+        min: 0,
+        value: 100,
+    });
+    $("#income").on("slide", function(slideEvt) {
+        $("#incomeSliderVal").text(slideEvt.value);
+    });
+
+    $("#age").slider({
+        id: "ageSlider",
+        min: 18,
+        max: 120,
+        value: 30,
+    });
+    $("#age").on("slide", function(slideEvt) {
+        $("#ageSliderVal").text(slideEvt.value);
+    });
+
+    $( "input, select" ).change(function() {
+        updateRates();
+    });
+
+    function updateRates(){
+      console.log("Change");
+      console.log(
+            parseInt($('input[name=income]').val())*1000,
+            $('input[name=gender]:checked').val(),
+            $('input[name=age]').val(),
+            $("#edu").is(':checked'), 
+            $("#homeown").is(':checked'), 
+            $('select[name=state]').val() )
+      var rating = rateIt(
+            parseInt($('input[name=income]').val())*1000,
+            $('input[name=gender]:checked').val(),
+            $('input[name=age]').val(),
+            $("#edu").is(':checked'),
+            $("#homeown").is(':checked'), 
+            $('select[name=state]').val() )
+      console.log(rating);
+      $("#rating").text("Rating: "+rating+" points")        
+    }
+
+    var state_ranks = {"AK":0,"AL":2,"AR":0,"AZ":6,"CA":15,"CO":3,"CT":2,"DC":2,"DE":4,"FL":3,"GA":5,"HI":3,"IA":0,"ID":0,"IL":3,"IN":2,"KS":0,"KY":1,"LA":1,"MA":1,"MD":7,"ME":1,"MI":5,"MN":3,"MO":0,"MS":0,"MT":1,"NC":1,"ND":0,"NE":1,"NH":0,"NJ":3,"NM":0,"NV":3,"NY":2,"OH":0,"OK":0,"OR":2,"PA":2,"PR":0,"RI":1,"SC":1,"SD":0,"TN":2,"TX":3,"UT":3,"VA":3,"VT":0,"WA":2,"WI":2,"WV":0,"WY":0}
+
+    function incomeRating(income){
+        incs = [{'l':0, 'u':10000,'r':0.077694},{'l':10000, 'u':14999,'r':0.00031},{'l':15000, 'u':19999,'r':0.00102},{'l':20000, 'u':24999,'r':0.000189},{'l':25000, 'u':29999,'r':0.068113},{'l':30000, 'u':34999,'r':0.000928},{'l':35000, 'u':39999,'r':0.000076},{'l':40000, 'u':44999,'r':0.000194},{'l':45000, 'u':49999,'r':0.000072},{'l':50000, 'u':59999,'r':0.000132},{'l':60000, 'u':74999,'r':0.062264},{'l':75000, 'u':99999,'r':0.003614},{'l':100000, 'u':124999,'r':0.0271},{'l':125000, 'u':149999,'r':0.160549},{'l':150000, 'u':199999,'r':0.337935},{'l':200000, 'u':100000000,'r':0.120424}]
+        var idx = 0;
+        for (var i=0; i<incs.length;i++){
+                inc = incs[i]
+                if (income >= inc.l && income <= inc.u){
+                        idx = i;
+                        break;
+                }
+        }
+
+        var rating = incs[idx].r
+
+        var ten = (incs[idx].u - incs[idx].l) /10
+        console.log("TEN")
+        var upper = {}, lower = {}
+        if (income - incs[idx].l <= ten){
+            upper = incs[idx]
+            lower = incs[idx-1]
+        } else if (incs[idx].u - income < ten){
+            upper = incs[idx+1]
+            lower = incs[idx]             
+        } else {
+            return rating
+        }
+
+        ten = (lower.u - lower.l) /10
+        var y1 = lower.r
+        var x1 = lower.u - ten
+        ten = (upper.u - upper.l) /10
+        var y2 = upper.r
+        var x2 = upper.l + ten
+        rating = (y2-y1) /(x2-x1)*(income-x1) + y1
+
+        return rating
+
+        // } else {
+        //         return incs[idx].r
+        // }        
+    }
+    
+    function rateIt(income, gender, age, higherEdu, homeOwnership, state){
+        rating = incomeRating(income)
+
+        if (gender=='F' && (  age>=18 && age < 24))                 rating = rating + 0.000894
+        if (gender=='F' && (  age>=25 && age < 34)   && higherEdu)  rating = rating + 0.000247
+        if (gender=='F' && (  age>=25 && age < 34))                 rating = rating + 0.001653
+        if (gender=='F' && (  age>=25 && age < 150)  && higherEdu)  rating = rating + 0.013628
+        if (gender=='F' && (  age>=25 && age < 150)  && higherEdu)  rating = rating + 0.001921
+        if (gender=='F' && (  age>=25 && age < 150))                rating = rating + 0.002089
+        if (gender=='F' && (  age>=35 && age < 44)   && higherEdu)  rating = rating + 0.000659
+        if (gender=='F' && (  age>=35 && age < 44))                 rating = rating + 0.005604
+        if (gender=='F' && (  age>=45 && age < 64)   && higherEdu)  rating = rating + 0.000448
+        if (gender=='F' && (  age>=45 && age < 64))                 rating = rating + 0.003736
+        if (gender=='F' && (  age>=65 && age < 150)  && higherEdu)  rating = rating + 0.00094
+        if (gender=='F' && (  age>=65 && age < 150))                rating = rating + 0.002285
+        if (gender=='F' && (  age>=0   && age < 150) && higherEdu)  rating = rating + 0.013696
+        if (gender=='M' && (  age>=18 && age < 24))                 rating = rating + 0.001122
+        if (gender=='M' && (  age>=25 && age < 34)   && higherEdu)  rating = rating + 0.000155
+        if (gender=='M' && (  age>=25 && age < 34))                 rating = rating + 0.010014
+        if (gender=='M' && (  age>=25 && age < 150)  && higherEdu)  rating = rating + 0.00333
+        if (gender=='M' && (  age>=25 && age < 150)  && higherEdu)  rating = rating + 0.024949
+        if (gender=='M' && (  age>=25 && age < 150))                rating = rating + 0.010387
+        if (gender=='M' && (  age>=35 && age < 44)   && higherEdu)  rating = rating + 0.00823
+        if (gender=='M' && (  age>=35 && age < 44))                 rating = rating + 0.001309
+        if (gender=='M' && (  age>=45 && age < 64)   && higherEdu)  rating = rating + 0.000614
+        if (gender=='M' && (  age>=45 && age < 64))                 rating = rating + 0.001251
+        if (gender=='M' && (  age>=65 && age < 150)  && higherEdu)  rating = rating + 0.004096
+        if (gender=='M' && (  age>=65 && age < 150))                rating = rating + 0.009753
+        if (gender=='M' && (  age>=0   && age < 150) && higherEdu)  rating = rating + 0.001027
+
+        if (homeOwnership == 'Y') rating = rating + 0.005202
+
+        rating = rating + state_ranks[state]*0.002248
+
+        return (rating*100*100/45).toFixed(2);
+        // return rating;
+
+    }
+    updateRates()
+
+</script>

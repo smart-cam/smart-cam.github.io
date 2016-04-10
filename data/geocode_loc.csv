@@ -1,0 +1,783 @@
+Location,Code,Location2,Code2
+Abilene-Sweetwater (DMA),#ERROR!,"Abilene-, Sweetwater",#ERROR!
+Albany-Schenectady-Troy (DMA),#ERROR!,"Albany-Schenectady-, Troy",#ERROR!
+Albuquerque,#ERROR!,Albuquerque,#ERROR!
+Albuquerque-Santa Fe (DMA),#ERROR!,"Albuquerque-Santa , Fe",#ERROR!
+Allentown-Bethlehem-Easton PA-NJ (CBSA),#ERROR!,"Allentown-Bethlehem-Easton PA-, NJ",#ERROR!
+Arecibo (Region) (DMA),#ERROR!,", Arecibo ",#ERROR!
+Athens-Clarke County GA (CBSA),#ERROR!,"Athens-Clarke County , GA",#ERROR!
+Atlanta,#ERROR!,Atlanta,#ERROR!
+Atlanta (DMA),#ERROR!,", Atlanta",#ERROR!
+Augusta (DMA),#ERROR!,", Augusta",#ERROR!
+Augusta-Richmond County GA-SC (CBSA),#ERROR!,"Augusta-Richmond County GA-, SC",#ERROR!
+Austin (DMA),#ERROR!,", Austin",#ERROR!
+Bakersfield (DMA),#ERROR!,", Bakersfield",#ERROR!
+Baltimore,#ERROR!,Baltimore,#ERROR!
+Bluefield-Beckley-Oak Hill (DMA),#ERROR!,"Bluefield-Beckley-Oak , Hill",#ERROR!
+Bluefield WV-VA (CBSA),#ERROR!,"Bluefield WV-, VA",#ERROR!
+Butte-Bozeman (DMA),#ERROR!,"Butte-, Bozeman",#ERROR!
+Charleston-Huntington (DMA),#ERROR!,"Charleston-, Huntington",#ERROR!
+Cincinnati (DMA),#ERROR!,", Cincinnati",#ERROR!
+Clarksburg-Weston (DMA),#ERROR!,"Clarksburg-, Weston",#ERROR!
+Cleveland,#ERROR!,Cleveland,#ERROR!
+Columbus-Tupelo-West Point (DMA),#ERROR!,"Columbus-Tupelo-West , Point",#ERROR!
+Corpus Christi (DMA),#ERROR!,"Corpus , Christi",#ERROR!
+Cumberland MD-WV (CBSA),#ERROR!,"Cumberland MD-, WV",#ERROR!
+Dallas-Fort Worth (DMA),#ERROR!,"Dallas-Fort , Worth",#ERROR!
+Dayton (DMA),#ERROR!,", Dayton",#ERROR!
+De Ridder LA (CBSA),#ERROR!,"De Ridder , LA",#ERROR!
+Erie (DMA),#ERROR!,", Erie",#ERROR!
+Fargo ND-MN (CBSA),#ERROR!,"Fargo ND-, MN",#ERROR!
+Fargo-Valley City (DMA),#ERROR!,"Fargo-Valley , City",#ERROR!
+Fayetteville-Springdale-Rogers AR-MO (CBSA),#ERROR!,"Fayetteville-Springdale-Rogers AR-, MO",#ERROR!
+Flint-Saginaw-Bay City (DMA),#ERROR!,"Flint-Saginaw-Bay , City",#ERROR!
+Grand Rapids-Kalmazoo-Battle Creek (DMA),#ERROR!,"Grand Rapids-Kalmazoo-Battle , Creek",#ERROR!
+Greensboro-High Point-Winston-Salem (DMA),#ERROR!,"Greensboro-High Point-Winston-, Salem",#ERROR!
+Greenville et al SC-NC (DMA),#ERROR!,"Greenville et al SC-, NC",#ERROR!
+Helena (DMA),#ERROR!,", Helena",#ERROR!
+Houston,#ERROR!,Houston,#ERROR!
+Iron Mountain MI-WI (CBSA),#ERROR!,"Iron Mountain MI-, WI",#ERROR!
+Knoxville (DMA),#ERROR!,", Knoxville",#ERROR!
+LaGrange GA (CBSA),#ERROR!,"LaGrange , GA",#ERROR!
+Las Vegas (DMA),#ERROR!,"Las , Vegas",#ERROR!
+Lewiston ID-WA (CBSA),#ERROR!,"Lewiston ID-, WA",#ERROR!
+Little Rock-Pine Bluff (DMA),#ERROR!,"Little Rock-Pine , Bluff",#ERROR!
+Lubbock (DMA),#ERROR!,", Lubbock",#ERROR!
+Memphis (DMA),#ERROR!,", Memphis",#ERROR!
+Miami-Ft Lauderdale,#ERROR!,Miami-Ft Lauderdale,#ERROR!
+Minneapolis-Saint Paul (DMA),#ERROR!,"Minneapolis-Saint , Paul",#ERROR!
+Montgomery-Selma (DMA),#ERROR!,"Montgomery-, Selma",#ERROR!
+Nashville (DMA),#ERROR!,", Nashville",#ERROR!
+Natchez MS-LA (CBSA),#ERROR!,"Natchez MS-, LA",#ERROR!
+New Orleans (DMA),#ERROR!,"New , Orleans",#ERROR!
+New York (DMA),#ERROR!,"New , York",#ERROR!
+New York-Northern New Jersey-Long Island NY-NJ-PA (CBSA),#ERROR!,"New York-Northern New Jersey-Long Island NY-NJ-, PA",#ERROR!
+Norfolk-Portsmouth-Newport News (DMA),#ERROR!,"Norfolk-Portsmouth-Newport , News",#ERROR!
+Orlando-Daytona Beach-Melbourne (DMA),#ERROR!,"Orlando-Daytona Beach-, Melbourne",#ERROR!
+Paducah-Cape Girardeau-Harrisburg (DMA),#ERROR!,"Paducah-Cape Girardeau-, Harrisburg",#ERROR!
+Pittsburgh (DMA),#ERROR!,", Pittsburgh",#ERROR!
+Ponce (Region) (DMA),#ERROR!,", Ponce ",#ERROR!
+Quincy IL-MO (CBSA),#ERROR!,"Quincy IL-, MO",#ERROR!
+Raleigh-Durham (Fayetteville) (DMA),#ERROR!,"Raleigh-, Durham ",#ERROR!
+Sacramento,#ERROR!,Sacramento,#ERROR!
+Saginaw-Saginaw Township North MI (CBSA),#ERROR!,"Saginaw-Saginaw Township North , MI",#ERROR!
+Salisbury,#ERROR!,Salisbury,#ERROR!
+San Antonio,#ERROR!,San Antonio,#ERROR!
+San Francisco,#ERROR!,San Francisco,#ERROR!
+Sherman-Ada (DMA),#ERROR!,"Sherman-, Ada",#ERROR!
+Shreveport (DMA),#ERROR!,", Shreveport",#ERROR!
+Spokane (DMA),#ERROR!,", Spokane",#ERROR!
+St. Cloud MN (CBSA),#ERROR!,"St. Cloud , MN",#ERROR!
+Tallahassee et al FL-GA (DMA),#ERROR!,"Tallahassee et al FL-, GA",#ERROR!
+Tampa,#ERROR!,Tampa,#ERROR!
+Terre Haute (DMA),#ERROR!,"Terre , Haute",#ERROR!
+Union City TN-KY (CBSA),#ERROR!,"Union City TN-, KY",#ERROR!
+Virginia Beach-Norfolk-Newport News VA-NC (CBSA),#ERROR!,"Virginia Beach-Norfolk-Newport News VA-, NC",#ERROR!
+Waco-Temple-Bryan (DMA),#ERROR!,"Waco-Temple-, Bryan",#ERROR!
+Washington-Arlington-Alexandria DC-VA-MD-WV (CBSA),#ERROR!,"Washington-Arlington-Alexandria DC-VA-MD-, WV",#ERROR!
+Washington D.C.,#ERROR!,Washington D.C.,#ERROR!
+Watertown-Fort Drum NY (CBSA),#ERROR!,"Watertown-Fort Drum , NY",#ERROR!
+Weirton-Steubenville WV-OH (CBSA),#ERROR!,"Weirton-Steubenville WV-, OH",#ERROR!
+Wilkes Barre-Scranton (DMA),#ERROR!,"Wilkes Barre-, Scranton",#ERROR!
+Wilmington (DMA),#ERROR!,", Wilmington",#ERROR!
+Youngstown (DMA),#ERROR!,", Youngstown",#ERROR!
+Zanesville (DMA),#ERROR!,", Zanesville",#ERROR!
+Punta Gorda FL (CBSA),#ERROR!,"Punta Gorda , FL","26.9294444,-82.0455556"
+Laredo TX (CBSA),#ERROR!,"Laredo , TX","27.5061111,-99.5072222"
+Palm Bay-Melbourne-Titusville FL (CBSA),#ERROR!,"Palm Bay-Melbourne-Titusville , FL","28.6119444,-80.8077778"
+Deltona-Daytona Beach-Ormond Beach FL (CBSA),#ERROR!,"Deltona-Daytona Beach-Ormond Beach , FL","29.2855556,-81.0561111"
+Gainesville FL (CBSA),#ERROR!,"Gainesville , FL","29.6513889,-82.325"
+Kerrville TX (CBSA),#ERROR!,"Kerrville , TX","30.0472222,-99.14"
+Fredericksburg TX (CBSA),#ERROR!,"Fredericksburg , TX","30.275,-98.8716667"
+Gulfport-Biloxi MS (CBSA),#ERROR!,"Gulfport-Biloxi , MS","30.3958333,-88.8852778"
+Pensacola-Ferry Pass-Brent FL (CBSA),#ERROR!,"Pensacola-Ferry Pass-Brent , FL","30.4686111,-87.2361111"
+Hammond LA (CBSA),#ERROR!,"Hammond , LA","30.5041667,-90.4611111"
+San Angelo TX (CBSA),#ERROR!,"San Angelo , TX","31.4636111,-100.4366667"
+Jackson MS (DMA),#ERROR!,"Jackson , MS","32.2986111,-90.1847222"
+Vicksburg MS (CBSA),#ERROR!,"Vicksburg , MS","32.3525,-90.8777778"
+Montgomery AL (CBSA),#ERROR!,"Montgomery , AL","32.3666667,-86.3"
+Columbus GA (DMA),#ERROR!,"Columbus , GA","32.4608333,-84.9877778"
+Silver City NM (CBSA),#ERROR!,"Silver City , NM","32.77,-108.2797222"
+Carlsbad-Artesia NM (CBSA),#ERROR!,"Carlsbad-Artesia , NM","32.8422222,-104.4027778"
+San Diego-Carlsbad-San Marcos CA (CBSA),#ERROR!,"San Diego-Carlsbad-San Marcos , CA","33.1433333,-117.1652778"
+Greenville MS (CBSA),#ERROR!,"Greenville , MS","33.41,-91.0616667"
+Phoenix AZ (DMA),#ERROR!,"Phoenix , AZ","33.4483333,-112.0733333"
+Starkville MS (CBSA),#ERROR!,"Starkville , MS","33.4502778,-88.8183333"
+Indianola MS (CBSA),#ERROR!,"Indianola , MS","33.4508333,-90.655"
+Columbus MS (CBSA),#ERROR!,"Columbus , MS","33.4955556,-88.4272222"
+Killeen-Temple-Fort Hood TX (CBSA),#ERROR!,"Killeen-Temple-Fort Hood , TX","33.5427778,-97.3488889"
+Myrtle Beach-Conway-North Myrtle Beach SC (CBSA),#ERROR!,"Myrtle Beach-Conway-North Myrtle Beach , SC","33.6888889,-78.8869444"
+Cleveland MS (CBSA),#ERROR!,"Cleveland , MS","33.7438889,-90.7247222"
+Los Angeles-Long Beach-Anaheim CA (CBSA),#ERROR!,"Los Angeles-Long Beach-Anaheim , CA","33.8352778,-117.9136111"
+Columbia SC (CBSA),#ERROR!,"Columbia , SC","34.0005556,-81.035"
+Cedartown GA (CBSA),#ERROR!,"Cedartown , GA","34.0536111,-85.255"
+Plainview TX (CBSA),#ERROR!,"Plainview , TX","34.1847222,-101.7063889"
+Pine Bluff AR (CBSA),#ERROR!,"Pine Bluff , AR","34.2283333,-92.0030556"
+Tupelo MS (CBSA),#ERROR!,"Tupelo , MS","34.2575,-88.7033333"
+Hot Springs AR (CBSA),#ERROR!,"Hot Springs , AR","34.5036111,-93.055"
+Florence-Muscle Shoals AL (CBSA),#ERROR!,"Florence-Muscle Shoals , AL","34.7447222,-87.6675"
+Laurinburg NC (CBSA),#ERROR!,"Laurinburg , NC","34.7738889,-79.4630556"
+McAlester OK (CBSA),#ERROR!,"McAlester , OK","34.9333333,-95.7694444"
+Corinth MS (CBSA),#ERROR!,"Corinth , MS","34.9341667,-88.5222222"
+New Bern NC (CBSA),#ERROR!,"New Bern , NC","35.1083333,-77.0444444"
+Brevard NC (CBSA),#ERROR!,"Brevard , NC","35.2333333,-82.7344444"
+Shawnee OK (CBSA),#ERROR!,"Shawnee , OK","35.3272222,-96.925"
+Elk City OK (CBSA),#ERROR!,"Elk City , OK","35.4119444,-99.4038889"
+Shelbyville TN (CBSA),#ERROR!,"Shelbyville , TN","35.4833333,-86.4602778"
+Gallup NM (CBSA),#ERROR!,"Gallup , NM","35.5280556,-108.7419444"
+Pampa TX (CBSA),#ERROR!,"Pampa , TX","35.5361111,-100.9594444"
+San Luis Obispo-Paso Robles CA (CBSA),#ERROR!,"San Luis Obispo-Paso Robles , CA","35.6266667,-120.69"
+McMinnville TN (CBSA),#ERROR!,"McMinnville , TN","35.6833333,-85.77"
+Muskogee OK (CBSA),#ERROR!,"Muskogee , OK","35.7477778,-95.3694444"
+Batesville AR (CBSA),#ERROR!,"Batesville , AR","35.7697222,-91.6408333"
+Raleigh-Cary NC (CBSA),#ERROR!,"Raleigh-Cary , NC","35.7913889,-78.7813889"
+Dumas TX (CBSA),#ERROR!,"Dumas , TX","35.8655556,-101.9727778"
+Sevierville TN (CBSA),#ERROR!,"Sevierville , TN","35.8680556,-83.5619444"
+Blytheville AR (CBSA),#ERROR!,"Blytheville , AR","35.9272222,-89.9188889"
+Rocky Mount NC (CBSA),#ERROR!,"Rocky Mount , NC","35.9380556,-77.7908333"
+Crossville TN (CBSA),#ERROR!,"Crossville , TN","35.9488889,-85.0269444"
+Greensboro-High Point NC (CBSA),#ERROR!,"Greensboro-High Point , NC","35.9555556,-80.0055556"
+Paragould AR (CBSA),#ERROR!,"Paragould , AR","36.0583333,-90.4972222"
+Las Vegas-Paradise NV (CBSA),#ERROR!,"Las Vegas-Paradise , NV","36.0972222,-115.1458333"
+Hanford-Corcoran CA (CBSA),#ERROR!,"Hanford-Corcoran , CA","36.0980556,-119.5594444"
+Boone NC (CBSA),#ERROR!,"Boone , NC","36.2166667,-81.6747222"
+Elizabeth City NC (CBSA),#ERROR!,"Elizabeth City , NC","36.2944444,-76.2513889"
+Johnson City TN (CBSA),#ERROR!,"Johnson City , TN","36.3133333,-82.3536111"
+Henderson NC (CBSA),#ERROR!,"Henderson , NC","36.3294444,-78.3994444"
+Guymon OK (CBSA),#ERROR!,"Guymon , OK","36.6827778,-101.4811111"
+Martinsville VA (CBSA),#ERROR!,"Martinsville , VA","36.6913889,-79.8727778"
+Fresno CA (CBSA),#ERROR!,"Fresno , CA","36.7477778,-119.7713889"
+Poplar Bluff MO (CBSA),#ERROR!,"Poplar Bluff , MO","36.7569444,-90.3927778"
+Joplin MO (CBSA),#ERROR!,"Joplin , MO","37.0841667,-94.5130556"
+Blacksburg-Christiansburg-Radford VA (CBSA),#ERROR!,"Blacksburg-Christiansburg-Radford , VA","37.1316667,-80.5766667"
+Roanoke VA (CBSA),#ERROR!,"Roanoke , VA","37.2708333,-79.9416667"
+Madisonville KY (CBSA),#ERROR!,"Madisonville , KY","37.3280556,-87.4988889"
+Huntington-Ashland WV-KY-OH (CBSA),#ERROR!,"Huntington-Ashland WV-KY-, OH","37.4083333,-81.3527778"
+Danville KY (CBSA),#ERROR!,"Danville , KY","37.6455556,-84.7722222"
+Carbondale IL (CBSA),#ERROR!,"Carbondale , IL","37.7272222,-89.2166667"
+Farmington MO (CBSA),#ERROR!,"Farmington , MO","37.7808333,-90.4216667"
+Staunton-Waynesboro VA (CBSA),#ERROR!,"Staunton-Waynesboro , VA","38.0683333,-78.8897222"
+Frankfort KY (CBSA),#ERROR!,"Frankfort , KY","38.2008333,-84.8733333"
+Pueblo CO (CBSA),#ERROR!,"Pueblo , CO","38.2544444,-104.6086111"
+Washington IN (CBSA),#ERROR!,"Washington , IN","38.6591667,-87.1727778"
+Colorado Springs CO (CBSA),#ERROR!,"Colorado Springs , CO","38.8338889,-104.8208333"
+Salina KS (CBSA),#ERROR!,"Salina , KS","38.8402778,-97.6111111"
+Elkins WV (CBSA),#ERROR!,"Elkins , WV","38.9258333,-79.8469444"
+Seymour IN (CBSA),#ERROR!,"Seymour , IN","38.9591667,-85.8902778"
+Lawrence KS (CBSA),#ERROR!,"Lawrence , KS","38.9716667,-95.235"
+Topeka KS (CBSA),#ERROR!,"Topeka , KS","39.0483333,-95.6777778"
+Columbus IN (CBSA),#ERROR!,"Columbus , IN","39.2013889,-85.9213889"
+Chillicothe OH (CBSA),#ERROR!,"Chillicothe , OH","39.3330556,-82.9825"
+Greensburg IN (CBSA),#ERROR!,"Greensburg , IN","39.3372222,-85.4836111"
+Reno NV (DMA),#ERROR!,"Reno , NV","39.5297222,-119.8127778"
+Chico CA (CBSA),#ERROR!,"Chico , CA","39.7286111,-121.8363889"
+York-Hanover PA (CBSA),#ERROR!,"York-Hanover , PA","39.8005556,-76.9833333"
+Gettysburg PA (CBSA),#ERROR!,"Gettysburg , PA","39.8308333,-77.2313889"
+New Castle IN (CBSA),#ERROR!,"New Castle , IN","39.9288889,-85.3702778"
+Columbus OH (CBSA),#ERROR!,"Columbus , OH","39.9611111,-82.9988889"
+Columbus OH (DMA),#ERROR!,"Columbus , OH","39.9611111,-82.9988889"
+Indianapolis-Carmel IN (CBSA),#ERROR!,"Indianapolis-Carmel , IN","39.9783333,-86.1180556"
+Somerset PA (CBSA),#ERROR!,"Somerset , PA","40.0083333,-79.0783333"
+Urbana OH (CBSA),#ERROR!,"Urbana , OH","40.1083333,-83.7525"
+Champaign-Urbana IL (CBSA),#ERROR!,"Champaign-Urbana , IL","40.1105556,-88.2072222"
+Danville IL (CBSA),#ERROR!,"Danville , IL","40.1244444,-87.63"
+Sidney OH (CBSA),#ERROR!,"Sidney , OH","40.2841667,-84.1555556"
+Bellefontaine OH (CBSA),#ERROR!,"Bellefontaine , OH","40.3611111,-83.7597222"
+Lafayette-West Lafayette IN (CBSA),#ERROR!,"Lafayette-West Lafayette , IN","40.4166667,-86.8752778"
+Pittsburgh PA (CBSA),#ERROR!,"Pittsburgh , PA","40.4405556,-79.9961111"
+Wapakoneta OH (CBSA),#ERROR!,"Wapakoneta , OH","40.5677778,-84.1936111"
+Indiana PA (CBSA),#ERROR!,"Indiana , PA","40.6213889,-79.1527778"
+Kearney NE (CBSA),#ERROR!,"Kearney , NE","40.6994444,-99.0811111"
+Mansfield OH (CBSA),#ERROR!,"Mansfield , OH","40.7583333,-82.5155556"
+Lexington NE (CBSA),#ERROR!,"Lexington , NE","40.7808333,-99.7411111"
+Wabash IN (CBSA),#ERROR!,"Wabash , IN","40.7977778,-85.8205556"
+Findlay OH (CBSA),#ERROR!,"Findlay , OH","41.0441667,-83.65"
+New Haven-Milford CT (CBSA),#ERROR!,"New Haven-Milford , CT","41.2222222,-73.0569444"
+Oskaloosa IA (CBSA),#ERROR!,"Oskaloosa , IA","41.2963889,-92.6441667"
+Meadville PA (CBSA),#ERROR!,"Meadville , PA","41.6413889,-80.1516667"
+Toledo OH (CBSA),#ERROR!,"Toledo , OH","41.6638889,-83.5552778"
+Boone IA (CBSA),#ERROR!,"Boone , IA","42.0597222,-93.88"
+Springfield MA (CBSA),#ERROR!,"Springfield , MA","42.1013889,-72.5902778"
+Erie PA (CBSA),#ERROR!,"Erie , PA","42.1291667,-80.0852778"
+Rockford IL (CBSA),#ERROR!,"Rockford , IL","42.2711111,-89.0938889"
+Pittsfield MA (CBSA),#ERROR!,"Pittsfield , MA","42.45,-73.2458333"
+Dubuque IA (CBSA),#ERROR!,"Dubuque , IA","42.5005556,-90.6644444"
+Waterloo-Cedar Falls IA (CBSA),#ERROR!,"Waterloo-Cedar Falls , IA","42.5277778,-92.4452778"
+Burley ID (CBSA),#ERROR!,"Burley , ID","42.5358333,-113.7919444"
+Racine WI (CBSA),#ERROR!,"Racine , WI","42.7261111,-87.7827778"
+Holland MI (CBSA),#ERROR!,"Holland , MI","42.7875,-86.1088889"
+Whitewater WI (CBSA),#ERROR!,"Whitewater , WI","42.8336111,-88.7322222"
+Watertown-Fort Atkinson WI (CBSA),#ERROR!,"Watertown-Fort Atkinson , WI","42.9288889,-88.8369444"
+Mountain Home ID (CBSA),#ERROR!,"Mountain Home , ID","43.1330556,-115.6902778"
+Mason City IA (CBSA),#ERROR!,"Mason City , IA","43.1536111,-93.2008333"
+Blackfoot ID (CBSA),#ERROR!,"Blackfoot , ID","43.1905556,-112.3441667"
+Glens Falls NY (CBSA),#ERROR!,"Glens Falls , NY","43.3094444,-73.6444444"
+Sioux Falls SD (CBSA),#ERROR!,"Sioux Falls , SD","43.55,-96.7"
+Mount Pleasant MI (CBSA),#ERROR!,"Mount Pleasant , MI","43.5977778,-84.7675"
+Mankato-North Mankato MN (CBSA),#ERROR!,"Mankato-North Mankato , MN","44.1636111,-93.9991667"
+Oshkosh-Neenah WI (CBSA),#ERROR!,"Oshkosh-Neenah , WI","44.1858333,-88.4625"
+Huron SD (CBSA),#ERROR!,"Huron , SD","44.3633333,-98.2138889"
+Shawano WI Micro (CBSA),#ERROR!,"Shawano WI , Micro","44.7822222,-88.6088889"
+Sheridan WY (CBSA),#ERROR!,"Sheridan , WY","44.7972222,-106.9555556"
+Bozeman MT (CBSA),#ERROR!,"Bozeman , MT","45.6797222,-111.0377778"
+Escanaba MI (CBSA),#ERROR!,"Escanaba , MI","45.7452778,-87.0644444"
+Billings MT (CBSA),#ERROR!,"Billings , MT","45.7833333,-108.5"
+Butte-Silver Bow MT (CBSA),#ERROR!,"Butte-Silver Bow , MT","46.0036111,-112.6669444"
+Yakima WA (CBSA),#ERROR!,"Yakima , WA","46.6022222,-120.5047222"
+Missoula MT (CBSA),#ERROR!,"Missoula , MT","46.8722222,-113.9930556"
+Wenatchee WA (CBSA),#ERROR!,"Wenatchee , WA","47.4236111,-120.3091667"
+Spokane WA (CBSA),#ERROR!,"Spokane , WA","47.6588889,-117.425"
+Panama City (DMA),#ERROR!,"Panama , City","9,-80"
+Panama City-Lynn Haven FL (CBSA),#ERROR!,"Panama City-Lynn Haven , FL","9,-80"
+Rochester NY (DMA),"18.0130556,-66.6144444",,
+Spearfish SD (CBSA),"18.3594444,-66.1113889",,
+Arecibo PR (CBSA),"18.4744444,-66.7161111",,
+Beeville TX (CBSA),"18.4744444,-66.7161111",,
+Aguadilla-Isabela PR (CBSA),"18.5027778,-67.0247222",,
+Chicago,"26.1902778,-97.6958333",,
+Morgantown WV (CBSA),"26.2155556,-98.325",,
+Clearlake CA (CBSA),"26.6402778,-81.8725",,
+Salem OR (CBSA),"26.9294444,-82.0455556",,
+Arcadia FL (CBSA),"27.2155556,-81.8586111",,
+Bedford IN (CBSA),"27.2155556,-81.8586111",,
+Phoenix AZ (CBSA),"27.2436111,-80.83",,
+Stevens Point WI (CBSA),"27.4952778,-81.4411111",,
+Peoria-Bloomington (DMA),"27.4986111,-82.575",,
+Madison WI (CBSA),"27.5061111,-99.5072222",,
+Sterling IL (CBSA),"27.6383333,-80.3975",,
+Alice TX (CBSA),"27.7519444,-98.0694444",,
+Batavia NY (CBSA),"27.7519444,-98.0694444",,
+Durham NC (CBSA),"27.8002778,-97.3961111",,
+Roswell NM (CBSA),"27.8347222,-81.9716667",,
+Waco TX (CBSA),"27.9655556,-82.8002778",,
+Platteville WI (CBSA),"28.2916667,-81.4077778",,
+Brownsville-Harlingen TX (CBSA),"28.4005556,-97.7480556",,
+Portland OR (DMA),"28.6119444,-80.8077778",,
+Janesville WI (CBSA),"28.8033333,-82.5761111",,
+Wichita,"28.805,-97.0033333",,
+Warren PA (CBSA),"28.9333333,-81.9486111",,
+Philadelphia (DMA),"29.1869444,-82.1402778",,
+Fort Dodge IA (CBSA),"29.1963889,-96.2694444",,
+Evansville (DMA),"29.2855556,-81.0561111",,
+Sikeston MO (CBSA),"29.4238889,-98.4933333",,
+Port Clinton OH (CBSA),"29.6483333,-81.6377778",,
+Hannibal MO (CBSA),"29.6513889,-82.325",,
+North Vernon IN (CBSA),"29.6991667,-91.2066667",,
+Jefferson GA (CBSA),"29.7955556,-90.8227778",,
+Bridgeport-Stamford-Norwalk CT (CBSA),"29.8986111,-93.9286111",,
+Paducah KY-IL (CBSA),"29.9938889,-90.2416667",,
+Levelland TX (CBSA),"30.0472222,-99.14",,
+Buffalo - Niagara Region (DMA),"30.0797222,-95.4169444",,
+Charlottesville VA (CBSA),"30.1666667,-96.3975",,
+Ludington MI (CBSA),"30.1894444,-82.6394444",,
+Longview TX (CBSA),"30.2238889,-92.0197222",,
+Los Angeles,"30.2238889,-92.0197222",,
+Lubbock TX (CBSA),"30.2263889,-93.2172222",,
+Greenville OH (CBSA),"30.275,-98.8716667",,
+Lake Charles (DMA),"30.3319444,-81.6558333",,
+El Campo TX (CBSA),"30.3933333,-86.4958333",,
+Huntsville-Decatur (Florence) (DMA),"30.3958333,-88.8852778",,
+Visalia-Porterville CA (CBSA),"30.4380556,-84.2808333",,
+Bradford PA (CBSA),"30.4505556,-91.1544444",,
+Pullman WA (CBSA),"30.4686111,-87.2361111",,
+Pittsburg KS (CBSA),"30.4941667,-92.4175",,
+Hutchinson MN (CBSA),"30.5041667,-90.4611111",,
+Austin-Round Rock TX (CBSA),"30.5080556,-97.6786111",,
+Bogalusa LA (CBSA),"30.5080556,-97.6786111",,
+Emporia KS (CBSA),"30.5227778,-87.9033333",,
+Reading PA (CBSA),"30.5252778,-89.6794444",,
+Decatur AL (CBSA),"30.6741667,-96.3697222",,
+New York (5 Boroughs),"30.6941667,-88.0430556",,
+Joplin-Pittsburg (DMA),"30.7233333,-95.5505556",,
+Cedar Rapids IA (CBSA),"30.7908333,-89.8486111",,
+Warrensburg MO (CBSA),"30.8363889,-83.9788889",,
+Bainbridge GA (CBSA),"30.9036111,-84.5755556",,
+Boise City-Nampa ID (CBSA),"30.9036111,-84.5755556",,
+Chicago (DMA),"31.1497222,-81.4916667",,
+Fayetteville NC (CBSA),"31.2230556,-85.3905556",,
+Morristown TN (CBSA),"31.2436111,-90.4530556",,
+Alexandria LA (CBSA),"31.3111111,-92.445",,
+Alexandria LA (DMA),"31.3111111,-92.445",,
+Jackson MI (CBSA),"31.3269444,-89.2902778",,
+Ponce PR (CBSA),"31.4588889,-85.6405556",,
+Shreveport-Bossier City LA (CBSA),"31.4636111,-100.4366667",,
+Wilmington NC (CBSA),"31.5491667,-97.1463889",,
+Cheyenne-Scottsbluff (DMA),"31.5788889,-90.4405556",,
+Orlando,"31.6033333,-94.6552778",,
+Marion NC (CBSA),"31.6938889,-89.1305556",,
+Fremont NE (CBSA),"31.7586111,-106.4863889",,
+Oxford MS (CBSA),"31.7605556,-93.0861111",,
+Portland,"31.7619444,-95.6305556",,
+Watertown (DMA),"31.8086111,-85.97",,
+Lake Havasu City-Kingman AZ (CBSA),"31.9636111,-95.2702778",,
+Springfield MO (CBSA),"32.0833333,-81.1",,
+Athens TX (CBSA),"32.2047222,-95.8552778",,
+Birmingham-Hoover AL (CBSA),"32.2047222,-95.8552778",,
+Evansville IN-KY (CBSA),"32.2686111,-107.7580556",,
+Kokomo IN (CBSA),"32.2986111,-90.1847222",,
+La Crosse-Eau Claire (DMA),"32.2986111,-90.1847222",,
+Manitowoc WI (CBSA),"32.3122222,-106.7777778",,
+Wheeling WV-OH (CBSA),"32.3525,-90.8777778",,
+Norfolk NE (CBSA),"32.3666667,-86.3",,
+St. Joseph MO-KS (CBSA),"32.4072222,-87.0211111",,
+Jacksonville FL (CBSA),"32.4313889,-80.67",,
+Abilene TX (CBSA),"32.4486111,-99.7327778",,
+Des Moines,"32.4608333,-84.9877778",,
+Vernal UT (CBSA),"32.4708333,-100.4055556",,
+McComb MS (CBSA),"32.5005556,-94.7402778",,
+New York (Westchester County),"32.5091667,-92.1191667",,
+Tallahassee FL (CBSA),"32.5158333,-93.7319444",,
+Modesto CA (CBSA),"32.5447222,-94.3672222",,
+Winston-Salem NC (CBSA),"32.6208333,-83.6",,
+Auburn-Opelika AL (CBSA),"32.6452778,-85.3783333",,
+Bloomsburg-Berwick PA (CBSA),"32.6452778,-85.3783333",,
+Jacksonville NC (CBSA),"32.7025,-103.1355556",,
+The Villages FL (CBSA),"32.7177778,-100.9172222",,
+Elkhart-Goshen IN (CBSA),"32.7355556,-97.1077778",,
+Macomb IL (CBSA),"32.7375,-101.9505556",,
+Taylorville IL (CBSA),"32.77,-108.2797222",,
+Fort Leonard Wood MO (CBSA),"32.7919444,-115.5622222",,
+Cleveland-Elyria-Mentor OH (CBSA),"32.8422222,-104.4027778",,
+Alamogordo NM (CBSA),"32.8994444,-105.9597222",,
+Nashville-Davidson--Murfreesboro TN (CBSA),"33.08,-83.2322222",,
+Van Wert OH (CBSA),"33.1383333,-95.6008333",,
+Sioux Falls (Mitchell) (DMA),"33.1433333,-117.1652778",,
+Vincennes IN (CBSA),"33.1730556,-86.2516667",,
+Fort Madison-Keokuk IA-MO (CBSA),"33.2075,-92.6661111",,
+Wausau-Rhinelander (DMA),"33.2097222,-87.5691667",,
+Selinsgrove PA (CBSA),"33.3941667,-104.5225",,
+Caguas (Region) (DMA),"33.4052778,-86.8113889",,
+Houghton MI (CBSA),"33.41,-91.0616667",,
+Jacksonville IL (CBSA),"33.4219444,-83.8522222",,
+Rapid City (DMA),"33.4483333,-112.0733333",,
+Rapid City SD (CBSA),"33.4483333,-112.0733333",,
+Tucson,"33.4502778,-88.8183333",,
+Kingsport-Bristol-Bristol TN-VA (CBSA),"33.4508333,-90.655",,
+Detroit-Warren-Livonia MI (CBSA),"33.4955556,-88.4272222",,
+Huntington IN (CBSA),"33.5161111,-90.1794444",,
+Lewisburg TN (CBSA),"33.5427778,-97.3488889",,
+Menomonie WI (CBSA),"33.5777778,-101.8547222",,
+Marshall MO (CBSA),"33.5872222,-102.3775",,
+Anniston-Oxford AL (CBSA),"33.6141667,-85.835",,
+Beaumont-Port Arthur TX (CBSA),"33.6141667,-85.835",,
+Opelousas-Eunice LA (CBSA),"33.6888889,-78.8869444",,
+Daphne-Fairhope AL (CBSA),"33.7438889,-90.7247222",,
+Huntsville AL (CBSA),"33.7688889,-89.8083333",,
+Memphis,"33.8352778,-117.9136111",,
+Atlanta-Sandy Springs-Marietta GA (CBSA),"33.9525,-84.55",,
+Bloomington IL (CBSA),"33.9525,-84.55",,
+Deming NM (CBSA),"34.0005556,-81.035",,
+Denver-Aurora CO (CBSA),"34.0005556,-81.035",,
+Hagerstown-Martinsburg MD-WV (CBSA),"34.0141667,-86.0066667",,
+Coeur d'Alene ID (CBSA),"34.0536111,-85.255",,
+San Juan Metro (Region) (DMA),"34.0633333,-117.65",,
+Laramie WY (CBSA),"34.1169444,-83.5725",,
+El Dorado AR (CBSA),"34.1747222,-86.8436111",,
+Richmond VA (CBSA),"34.1847222,-101.7063889",,
+Grants NM (CBSA),"34.1952778,-79.7627778",,
+Dallas-Fort Worth-Arlington TX (CBSA),"34.2,-90.5708333",,
+Reno,"34.2283333,-92.0030556",,
+Sebring FL (CBSA),"34.2569444,-85.1647222",,
+Wauchula FL (CBSA),"34.2575,-88.7033333",,
+Albertville AL (CBSA),"34.2675,-86.2088889",,
+Ponca City OK (CBSA),"34.2783333,-119.2922222",,
+Harlingen-Weslaco-Brownsville-McAllen (DMA),"34.2977778,-83.8241667",,
+Pocatello ID (CBSA),"34.3663889,-89.5191667",,
+Vermillion SD (CBSA),"34.4805556,-85.3477778",,
+Clarksburg WV (CBSA),"34.5025,-84.9511111",,
+Jasper IN (CBSA),"34.5036111,-93.055",,
+Jackson TN (CBSA),"34.5294444,-90.5916667",,
+Eugene-Springfield OR (CBSA),"34.6058333,-86.9833333",,
+Merrill WI (CBSA),"34.6180556,-79.0088889",,
+North Port-Sarasota-Bradenton FL (CBSA),"34.7227778,-76.7263889",,
+Jonesboro (DMA),"34.7302778,-86.5861111",,
+Grand Rapids-Wyoming MI (CBSA),"34.7447222,-87.6675",,
+Lake City FL (CBSA),"34.7538889,-77.4305556",,
+Elko NV (CBSA),"34.7697222,-84.9702778",,
+Marion OH (CBSA),"34.7738889,-79.4630556",,
+Jacksonville,"34.815,-102.3972222",,
+Morgan City LA (CBSA),"34.9333333,-95.7694444",,
+Duluth-Superior (DMA),"34.9341667,-88.5222222",,
+Searcy AR (CBSA),"34.9391667,-79.7741667",,
+Glendive MT (DMA),"35.0525,-78.8786111",,
+Oxford NC (CBSA),"35.1083333,-77.0444444",,
+Helena-West Helena AR (CBSA),"35.1472222,-107.8508333",,
+Davenport-Moline-Rock Island IA-IL (CBSA),"35.1594444,-84.8766667",,
+Lumberton NC (CBSA),"35.1894444,-114.0522222",,
+Amarillo TX (CBSA),"35.2219444,-101.8308333",,
+Battle Creek MI (CBSA),"35.2219444,-101.8308333",,
+Chattanooga (DMA),"35.2333333,-82.7344444",,
+State College PA (CBSA),"35.2505556,-91.7361111",,
+Lewistown PA (CBSA),"35.2625,-77.5819444",,
+Selma AL (CBSA),"35.2783333,-93.1336111",,
+Syracuse NY (CBSA),"35.2922222,-81.5358333",,
+Lewisburg PA (CBSA),"35.3130556,-80.2611111",,
+Sweetwater TX (CBSA),"35.3272222,-96.925",,
+Great Falls MT (CBSA),"35.3338889,-81.8652778",,
+Bakersfield CA (CBSA),"35.3733333,-119.0177778",,
+Boise (DMA),"35.3733333,-119.0177778",,
+Hattiesburg MS (CBSA),"35.3847222,-77.9930556",,
+Fort Polk South LA (CBSA),"35.4119444,-99.4038889",,
+Athens TN (CBSA),"35.4427778,-84.5930556",,
+Birmingham (Anniston and Tuscaloosa) (DMA),"35.4427778,-84.5930556",,
+Marshall TX (CBSA),"35.4491667,-86.7888889",,
+Picayune MS (CBSA),"35.4675,-97.5161111",,
+Somerset KY (CBSA),"35.4797222,-79.1805556",,
+Tahlequah OK (CBSA),"35.4833333,-86.4602778",,
+Harrisburg-Lancaster-Lebanon-York (DMA),"35.5280556,-108.7419444",,
+Portsmouth OH (CBSA),"35.5361111,-100.9594444",,
+Yuma AZ (CBSA),"35.5463889,-77.0525",,
+Marinette WI-MI (CBSA),"35.5938889,-105.2233333",,
+Asheville NC (CBSA),"35.6008333,-82.5541667",,
+Bemidji MN (CBSA),"35.6008333,-82.5541667",,
+Houma-Bayou Cane-Thibodaux LA (CBSA),"35.6125,-77.3666667",,
+Lafayette LA (CBSA),"35.6144444,-88.8138889",,
+Lafayette LA (DMA),"35.6144444,-88.8138889",,
+Springfield-Holyoke (DMA),"35.6266667,-120.69",,
+Champaign & Springfield-Decatur (DMA),"35.6677778,-101.3969444",,
+Moscow ID (CBSA),"35.6833333,-85.77",,
+Minneapolis-St. Paul-Bloomington MN-WI (CBSA),"35.6838889,-82.0094444",,
+Jacksonville (DMA),"35.7452778,-81.685",,
+Ontario OR-ID (CBSA),"35.7477778,-95.3694444",,
+Boulder CO (CBSA),"35.7697222,-91.6408333",,
+San Angelo (DMA),"35.7913889,-78.7813889",,
+Las Vegas,"35.8422222,-90.7041667",,
+Orlando-Kissimmee FL (CBSA),"35.8455556,-86.3902778",,
+Florence SC (CBSA),"35.8655556,-101.9727778",,
+St. Louis MO-IL (CBSA),"35.8680556,-83.5619444",,
+Victoria TX (CBSA),"35.9152778,-94.9697222",,
+Casper-Riverton (DMA),"35.9272222,-89.9188889",,
+Seattle-Tacoma (DMA),"35.9380556,-77.7908333",,
+El Centro CA (CBSA),"35.9488889,-85.0269444",,
+Hobbs NM (CBSA),"35.9555556,-80.0055556",,
+Lincoln IL (CBSA),"35.9605556,-83.9208333",,
+Palatka FL (CBSA),"35.9669444,-83.1877778",,
+Fond du Lac WI (CBSA),"35.9938889,-78.8988889",,
+Providence-New Bedford (DMA),"36.0583333,-90.4972222",,
+Williamsport PA (CBSA),"36.0652778,-119.0158333",,
+Marion IN (CBSA),"36.0972222,-115.1458333",,
+Idaho Falls ID (CBSA),"36.0980556,-119.5594444",,
+Tyler-Longview (Lufkin & Nacogdoches) (DMA),"36.1155556,-97.0580556",,
+Philadelphia,"36.1458333,-81.1608333",,
+Watertown SD (CBSA),"36.1538889,-95.9925",,
+Duluth MN-WI (CBSA),"36.1627778,-85.5016667",,
+Hinesville-Fort Stewart GA (CBSA),"36.1630556,-82.8311111",,
+Norwich-New London CT (CBSA),"36.2138889,-83.295",,
+Centralia IL (CBSA),"36.2166667,-81.6747222",,
+Lebanon PA (CBSA),"36.2361111,-90.0555556",,
+Mayfield KY (CBSA),"36.2716667,-93.8661111",,
+Fort Myers-Naples (DMA),"36.2944444,-76.2513889",,
+Providence-New Bedford-Fall River RI-MA (CBSA),"36.3019444,-88.3266667",,
+Point Pleasant WV-OH (CBSA),"36.3105556,-78.5911111",,
+Laredo (DMA),"36.3133333,-82.3536111",,
+Jackson TN (DMA),"36.3294444,-78.3994444",,
+Oil City PA (CBSA),"36.3352778,-92.385",,
+Savannah (DMA),"36.4613889,-77.6544444",,
+El Paso TX (CBSA),"36.5858333,-79.3952778",,
+Olean NY (CBSA),"36.6102778,-88.3147222",,
+Charlottesville (DMA),"36.6436111,-93.2183333",,
+Huntsville TX (CBSA),"36.6827778,-101.4811111",,
+Monroe-El Dorado (DMA),"36.6913889,-79.8727778",,
+Rochester NY (CBSA),"36.7069444,-97.0852778",,
+Glasgow KY (CBSA),"36.7280556,-108.2180556",,
+Morehead City NC (CBSA),"36.7416667,-88.6366667",,
+Bartlesville OK (CBSA),"36.7472222,-95.9805556",,
+Boston,"36.7472222,-95.9805556",,
+Grenada MS (CBSA),"36.7477778,-119.7713889",,
+Rockingham NC (CBSA),"36.7569444,-90.3927778",,
+Nacogdoches TX (CBSA),"36.8744444,-94.8772222",,
+Tampa-St. Petersburg-Clearwater FL (CBSA),"36.8766667,-89.5877778",,
+Miami,"36.9613889,-120.0597222",,
+Hartford-West Hartford-East Hartford CT (CBSA),"36.9958333,-85.9119444",,
+Las Vegas NM (CBSA),"37.0841667,-94.5130556",,
+Thomasville GA (CBSA),"37.0919444,-84.6041667",,
+Canon City CO (CBSA),"37.1316667,-80.5766667",,
+Traverse City MI (CBSA),"37.2152778,-93.2980556",,
+Tri-Cities TN-VA (DMA),"37.2152778,-93.2980556",,
+Savannah GA (CBSA),"37.2708333,-79.9416667",,
+Murray KY (CBSA),"37.3022222,-120.4819444",,
+Midland MI (CBSA),"37.3280556,-87.4988889",,
+Johnstown PA (CBSA),"37.4083333,-81.3527778",,
+Richmond IN (CBSA),"37.4108333,-94.7047222",,
+San Juan-Caguas-Guaynabo PR (CBSA),"37.5536111,-77.4605556",,
+New York (Northern New Jersey),"37.6391667,-120.9958333",,
+El Paso (Las Cruces) (DMA),"37.6455556,-84.7722222",,
+Gainesville GA (CBSA),"37.669,-84.6514",,
+Marquette MI (CBSA),"37.6805556,-92.6636111",,
+Cleveland-Akron (Canton) (DMA),"37.7272222,-89.2166667",,
+Brookhaven MS (CBSA),"37.7780556,-81.1883333",,
+Gillette WY (CBSA),"37.7808333,-90.4216667",,
+Sebastian-Vero Beach FL (CBSA),"37.9513889,-91.7711111",,
+Columbus NE (CBSA),"38.0291667,-78.4769444",,
+Tulsa OK (CBSA),"38.0683333,-78.8897222",,
+Greenville-New Bern-Washington (DMA),"38.2008333,-84.8733333",,
+Saint Joseph (DMA),"38.2544444,-104.6086111",,
+Columbus,"38.3497222,-81.6327778",,
+Lancaster PA (CBSA),"38.3913889,-86.9311111",,
+Clarksdale MS (CBSA),"38.4,-105.2166667",,
+Fremont OH (CBSA),"38.4038889,-96.1813889",,
+Indianapolis (DMA),"38.4494444,-78.8691667",,
+College Station-Bryan TX (CBSA),"38.525,-89.1333333",,
+Lansing-East Lansing MI (CBSA),"38.5766667,-92.1733333",,
+Youngstown-Warren-Boardman OH-PA (CBSA),"38.6591667,-87.1727778",,
+Wichita KS (CBSA),"38.6772222,-87.5286111",,
+Rome GA (CBSA),"38.7316667,-82.9977778",,
+Miami OK (CBSA),"38.7358333,-85.38",,
+Worthington MN (CBSA),"38.7627778,-93.7358333",,
+Oklahoma City OK (CBSA),"38.8022222,-89.0869444",,
+Decatur IL (CBSA),"38.8338889,-104.8208333",,
+Shelby NC (CBSA),"38.8402778,-97.6111111",,
+Brookings SD (CBSA),"38.8611111,-86.4872222",,
+Jackson MS (CBSA),"38.8791667,-99.3263889",,
+Fort Wayne (DMA),"38.9258333,-79.8469444",,
+Dalton GA (CBSA),"38.9583333,-122.6252778",,
+Sulphur Springs TX (CBSA),"38.9591667,-85.8902778",,
+Marquette (DMA),"38.9716667,-95.235",,
+Peoria IL (CBSA),"38.9847222,-85.6094444",,
+Washington et al DC-MD (DMA),"39.0483333,-95.6777778",,
+Lafayette IN (DMA),"39.0519444,-82.6366667",,
+Fort Collins-Loveland CO (CBSA),"39.12,-88.5433333",,
+Mobile AL (CBSA),"39.1230556,-93.1966667",,
+Cape Coral-Fort Myers FL (CBSA),"39.1652778,-86.5263889",,
+Muskegon-Norton Shores MI (CBSA),"39.1697222,-91.8827778",,
+Detroit (DMA),"39.2013889,-85.9213889",,
+Dallas,"39.2805556,-80.3447222",,
+Athens OH (CBSA),"39.3291667,-82.1013889",,
+Biloxi-Gulfport (DMA),"39.3291667,-82.1013889",,
+Crestview-Fort Walton Beach-Destin FL (CBSA),"39.3330556,-82.9825",,
+Homosassa Springs FL (CBSA),"39.3372222,-85.4836111",,
+New Ulm MN (CBSA),"39.4183333,-92.4380556",,
+Warner Robins GA (CBSA),"39.4666667,-87.4138889",,
+Columbia SC (DMA),"39.4830556,-88.3727778",,
+Galesburg IL (CBSA),"39.485,-80.1427778",,
+Cullman AL (CBSA),"39.515,-84.3983333",,
+San Diego (DMA),"39.5297222,-119.8127778",,
+Yankton SD (CBSA),"39.5363889,-83.4391667",,
+Walla Walla WA (CBSA),"39.5488889,-89.2944444",,
+Atchison KS (CBSA),"39.5630556,-95.1213889",,
+Billings (DMA),"39.5630556,-95.1213889",,
+North Wilkesboro NC (CBSA),"39.6294444,-79.9561111",,
+Idaho Falls-Pocatello (DMA),"39.7083333,-91.3583333",,
+Coshocton OH (CBSA),"39.7286111,-121.8363889",,
+Fairmont WV (CBSA),"39.7294444,-104.8313889",,
+Lake Charles LA (CBSA),"39.7338889,-90.2288889",,
+Eugene OR (DMA),"39.7588889,-84.1916667",,
+Sanford NC (CBSA),"39.8288889,-84.8902778",,
+Harrisonburg VA (CBSA),"39.8308333,-77.2313889",,
+Evanston WY (CBSA),"39.8402778,-88.9547222",,
+Greenville NC (CBSA),"39.8877778,-84.9255556",,
+Troy AL (CBSA),"39.9241667,-83.8088889",,
+Oxnard-Thousand Oaks-Ventura CA (CBSA),"39.9288889,-85.3702778",,
+Greeneville TN (CBSA),"39.9516667,-94.4530556",,
+Dothan (DMA),"39.9611111,-82.9988889",,
+DuBois PA (CBSA),"39.9611111,-82.9988889",,
+Kill Devil Hills NC (CBSA),"39.9783333,-86.1180556",,
+Tiffin OH (CBSA),"40.0083333,-79.0783333",,
+Charleston-Mattoon IL (CBSA),"40.015,-105.27",,
+Madera CA (CBSA),"40.0377778,-76.3058333",,
+Effingham IL (CBSA),"40.0411111,-86.8744444",,
+Huntingdon PA (CBSA),"40.1027778,-84.6330556",,
+West Palm Beach,"40.1083333,-83.7525",,
+Colorado Springs-Pueblo (DMA),"40.1105556,-88.2072222",,
+El Paso,"40.1244444,-87.63",,
+Mayaguez (Region) (DMA),"40.1483333,-89.3647222",,
+Lexington-Fayette KY (CBSA),"40.1947222,-92.5830556",,
+Indianapolis,"40.2013889,-77.1891667",,
+Brenham TX (CBSA),"40.2680556,-96.7466667",,
+East Stroudsburg PA (CBSA),"40.2719444,-81.8597222",,
+Tampa-Saint Petersburg (Sarasota) (DMA),"40.2841667,-84.1555556",,
+Las Cruces NM (CBSA),"40.3266667,-78.9222222",,
+San Antonio TX (CBSA),"40.3355556,-75.9272222",,
+Marshall MN (CBSA),"40.3408333,-76.4116667",,
+Monroe LA (CBSA),"40.3461111,-94.8722222",,
+Brunswick GA (CBSA),"40.3611111,-83.7597222",,
+Greeley CO (CBSA),"40.3977778,-105.0744444",,
+Lock Haven PA (CBSA),"40.4166667,-86.8752778",,
+Los Angeles (DMA),"40.4166667,-86.8752778",,
+Hickory-Lenoir-Morganton NC (CBSA),"40.4233333,-104.7086111",,
+Rexburg ID (CBSA),"40.4405556,-79.9961111",,
+Wheeling-Steubenville (DMA),"40.4555556,-109.5280556",,
+Mexico MO (CBSA),"40.4591667,-90.6716667",,
+Canton IL (CBSA),"40.4841667,-88.9936111",,
+Johnstown-Altoona (DMA),"40.4847222,-78.0105556",,
+Little Rock-North Little Rock AR (CBSA),"40.4863889,-86.1336111",,
+Altoona PA (CBSA),"40.5186111,-78.395",,
+Baton Rouge LA (CBSA),"40.5186111,-78.395",,
+Coldwater MI (CBSA),"40.5488889,-84.5702778",,
+Clarksville TN-KY (CBSA),"40.5580556,-90.035",,
+Minneapolis/St. Paul,"40.5583333,-85.6591667",,
+Winchester VA-WV (CBSA),"40.5677778,-84.1936111",,
+Iowa City IA (CBSA),"40.5861111,-98.3880556",,
+Crawfordsville IN (CBSA),"40.5866667,-122.3905556",,
+San Diego,"40.5866667,-122.3905556",,
+Missoula (DMA),"40.5886111,-83.1286111",,
+Maryville MO (CBSA),"40.5991667,-77.5716667",,
+Kennett MO (CBSA),"40.6213889,-79.1527778",,
+Russellville AR (CBSA),"40.6855556,-76.1958333",,
+Quincy-Hannibal-Keokuk (DMA),"40.6936111,-89.5888889",,
+Lebanon MO (CBSA),"40.6994444,-99.0811111",,
+Milwaukee-Waukesha-West Allis WI (CBSA),"40.7583333,-82.5155556",,
+Mayagüez PR (CBSA),"40.7808333,-99.7411111",,
+Tulsa (DMA),"40.7933333,-77.8602778",,
+Willmar MN (CBSA),"40.7977778,-85.8205556",,
+Stillwater OK (CBSA),"40.7988889,-76.8625",,
+Fort Wayne IN (CBSA),"40.8325,-115.7622222",,
+West Palm Beach-Fort Pierce (DMA),"40.8694444,-84.5841667",,
+Jonesboro AR (CBSA),"40.8830556,-85.4975",,
+Hays KS (CBSA),"40.925,-98.3416667",,
+Rock Springs WY (CBSA),"40.9266667,-81.6305556",,
+Harrisburg-Carlisle PA (CBSA),"40.9477778,-90.3711111",,
+Marshalltown IA (CBSA),"40.9644444,-76.8847222",,
+Forest City NC (CBSA),"40.9866667,-75.195",,
+Goldsboro NC (CBSA),"41.0441667,-83.65",,
+Cape Girardeau-Jackson MO-IL (CBSA),"41.0544444,-76.2336111",,
+Warsaw IN (CBSA),"41.1144444,-83.1780556",,
+Chattanooga TN-GA (CBSA),"41.1175,-73.4083333",,
+McAllen-Edinburg-Mission TX (CBSA),"41.1369444,-77.4472222",,
+Cookeville TN (CBSA),"41.14,-104.8197222",,
+Ozark AL (CBSA),"41.2222222,-73.0569444",,
+Yakima-Pasco-Richland-Kennewick (DMA),"41.2380556,-85.8530556",,
+Gainesville (DMA),"41.2683333,-110.9625",,
+Plymouth IN (CBSA),"41.2963889,-92.6441667",,
+Madison IN (CBSA),"41.3113889,-105.5905556",,
+Roanoke-Lynchburg (DMA),"41.3436111,-86.3097222",,
+Greenwood MS (CBSA),"41.3502778,-83.1219444",,
+Philadelphia-Camden-Wilmington PA-NJ-DE-MD (CBSA),"41.3555556,-72.1",,
+Auburn IN (CBSA),"41.3669444,-85.0588889",,
+Bloomington IN (CBSA),"41.3669444,-85.0588889",,
+Omaha-Council Bluffs NE-IA (CBSA),"41.4244444,-91.0430556",,
+Dothan AL (CBSA),"41.4297222,-97.3680556",,
+Greenwood-Greenville (DMA),"41.4333333,-96.4977778",,
+Phoenix,"41.4338889,-79.7066667",,
+Snyder TX (CBSA),"41.4488889,-82.7080556",,
+Corpus Christi TX (CBSA),"41.525,-88.0816667",,
+Fort Smith AR-OK (CBSA),"41.5822222,-85.8344444",,
+Seattle/Tacoma,"41.5875,-109.2022222",,
+Angola IN (CBSA),"41.6347222,-84.9994444",,
+Beatrice NE (CBSA),"41.6347222,-84.9994444",,
+Mountain Home AR (CBSA),"41.6413889,-80.1516667",,
+Kirksville MO (CBSA),"41.6611111,-91.53",,
+Washington Court House OH Micro (CBSA),"41.6638889,-83.5552778",,
+Danville VA (CBSA),"41.6661111,-81.3397222",,
+Ionia MI (CBSA),"41.7636111,-72.6855556",,
+Tuscaloosa AL (CBSA),"41.7886111,-89.6961111",,
+Wisconsin Rapids-Marshfield WI Micro (CBSA),"41.8438889,-79.1452778",,
+Davenport-Rock Island-Moline (DMA),"41.8444444,-90.1886111",,
+Ashtabula OH (CBSA),"41.865,-80.79",,
+Big Spring TX (CBSA),"41.865,-80.79",,
+Springfield OH (CBSA),"41.8666667,-103.6666667",,
+Adrian MI (CBSA),"41.8975,-84.0372222",,
+Niles-Benton Harbor MI (CBSA),"41.9163889,-83.3977778",,
+Dayton OH (CBSA),"41.9402778,-85.0005556",,
+Charlotte (DMA),"41.9558333,-78.6441667",,
+Springfield MO (DMA),"41.9788889,-76.5158333",,
+Cleveland TN (CBSA),"42.0083333,-91.6438889",,
+Parkersburg-Marietta-Vienna WV-OH (CBSA),"42.0283333,-97.4166667",,
+Ames IA (CBSA),"42.0347222,-93.6197222",,
+Bay City MI (CBSA),"42.0347222,-93.6197222",,
+Mobile-Pensacola (Fort Walton Beach) (DMA),"42.0494444,-92.9077778",,
+Celina OH (CBSA),"42.0597222,-93.88",,
+Pierre SD (CBSA),"42.0775,-78.43",,
+Traverse City-Cadillac (DMA),"42.1013889,-72.5902778",,
+Paris TN (CBSA),"42.1166667,-86.4541667",,
+Fresno-Visalia (DMA),"42.1291667,-80.0852778",,
+Knoxville TN (CBSA),"42.2458333,-84.4013889",,
+Ann Arbor MI (CBSA),"42.2708333,-83.7263889",,
+Beaumont-Port Arthur (DMA),"42.2708333,-83.7263889",,
+Scranton--Wilkes-Barre PA (CBSA),"42.2711111,-89.0938889",,
+Brainerd MN (CBSA),"42.3211111,-85.1797222",,
+Farmington NM (CBSA),"42.3683333,-83.3527778",,
+Richmond-Petersburg (DMA),"42.45,-73.2458333",,
+Clinton IA (CBSA),"42.4927778,-92.3427778",,
+Green Bay WI (CBSA),"42.4975,-94.1677778",,
+Flint MI (CBSA),"42.5005556,-90.6644444",,
+Yuma-El Centro (DMA),"42.5277778,-92.4452778",,
+Chico-Redding CA (DMA),"42.5358333,-113.7919444",,
+Wausau WI (CBSA),"42.5630556,-114.46",,
+Lamesa TX (CBSA),"42.6827778,-89.0186111",,
+Salt Lake City (DMA),"42.7261111,-87.7827778",,
+Albany-Schenectady-Troy NY (CBSA),"42.7283333,-73.6922222",,
+Madison (DMA),"42.7325,-84.5555556",,
+Riverside-San Bernardino-Ontario CA (CBSA),"42.7341667,-90.4783333",,
+West Plains MO (CBSA),"42.7794444,-96.9288889",,
+Jacksonville TX (CBSA),"42.7875,-86.1088889",,
+Roanoke Rapids NC (CBSA),"42.8713889,-112.4447222",,
+Helena MT (CBSA),"42.9133333,-85.7052778",,
+Zanesville OH (CBSA),"42.9288889,-88.8369444",,
+Kinston NC (CBSA),"42.9872222,-85.0711111",,
+Boston-Cambridge-Quincy MA-NH (CBSA),"42.9980556,-78.1877778",,
+Grand Island NE (CBSA),"43.0125,-83.6875",,
+Natchitoches LA (CBSA),"43.0166667,-88.0069444",,
+San Juan Sub (Region) (DMA),"43.025,-108.3794444",,
+Victoria (DMA),"43.0480556,-76.1477778",,
+Milledgeville GA (CBSA),"43.0730556,-89.4011111",,
+Chicago-Naperville-Joliet IL-IN-WI (CBSA),"43.0944444,-79.0569444",,
+Okeechobee FL (CBSA),"43.1330556,-115.6902778",,
+Monroe MI (CBSA),"43.1536111,-93.2008333",,
+Sayre PA (CBSA),"43.1547222,-77.6158333",,
+Scottsbluff NE (CBSA),"43.1547222,-77.6158333",,
+Omaha (DMA),"43.1688889,-86.2638889",,
+Calhoun GA (CBSA),"43.1905556,-112.3441667",,
+Hattiesburg-Laurel (DMA),"43.3094444,-73.6444444",,
+Alma MI (CBSA),"43.3788889,-84.6597222",,
+Baton Rouge (DMA),"43.3788889,-84.6597222",,
+Kansas City MO-KS (CBSA),"43.4666667,-112.0333333",,
+Baraboo WI (CBSA),"43.4711111,-89.7441667",,
+Borger TX (CBSA),"43.4711111,-89.7441667",,
+Cedar Rapids-Waterloo-Iowa City & Dubuque (DMA),"43.5408333,-116.5625",,
+Terre Haute IN (CBSA),"43.55,-96.7",,
+Branson MO (CBSA),"43.5944444,-83.8888889",,
+Oklahoma City (DMA),"43.5977778,-84.7675",,
+Naples-Marco Island FL (CBSA),"43.6155556,-84.2472222",,
+Newport TN (CBSA),"43.7094444,-98.0294444",,
+Syracuse (DMA),"43.7508333,-87.7144444",,
+Great Falls (DMA),"43.7730556,-88.4469444",,
+Sandusky OH (CBSA),"43.8261111,-111.7888889",,
+Merced CA (CBSA),"43.9552778,-86.4525",,
+Gainesville,"44.0463889,-123.0208333",,
+Gadsden AL (CBSA),"44.0522222,-123.0855556",,
+San Antonio (DMA),"44.0805556,-103.2305556",,
+Milwaukee,"44.0886111,-87.6575",,
+Milwaukee (DMA),"44.1636111,-93.9991667",,
+Plattsburgh NY (CBSA),"44.1858333,-88.4625",,
+Appleton WI (CBSA),"44.2619444,-88.4152778",,
+Beckley WV (CBSA),"44.2619444,-88.4152778",,
+Hartford-New Haven (DMA),"44.2911111,-105.5016667",,
+Cheyenne WY (CBSA),"44.3113889,-96.7980556",,
+Palestine TX (CBSA),"44.3125,-94.4602778",,
+Kalispell MT (CBSA),"44.3633333,-98.2138889",,
+Redding CA (CBSA),"44.3683333,-100.3505556",,
+Moberly MO (CBSA),"44.4469444,-95.7880556",,
+Toledo (DMA),"44.4908333,-103.8588889",,
+Hilton Head Island-Beaufort SC (CBSA),"44.5191667,-88.0197222",,
+Twin Falls ID (CBSA),"44.5236111,-89.5744444",,
+Riverton WY (CBSA),"44.6994444,-73.4533333",,
+Washington NC (CBSA),"44.7630556,-85.6205556",,
+Summerville GA (CBSA),"44.7822222,-88.6088889",,
+Talladega-Sylacauga AL (CBSA),"44.7972222,-106.9555556",,
+Mount Vernon IL (CBSA),"44.8755556,-91.9191667",,
+Kansas City (DMA),"44.8877778,-94.3694444",,
+Sheboygan WI (CBSA),"44.9430556,-123.0338889",,
+Muscatine IA (CBSA),"45.1805556,-89.6833333",,
+Aberdeen SD (CBSA),"45.4647222,-98.4861111",,
+Rolla MO (CBSA),"45.5236111,-122.675",,
+Charleston WV (CBSA),"45.6797222,-111.0377778",,
+Ft. Smith,"45.7452778,-87.0644444",,
+Burlington IA-IL (CBSA),"45.7833333,-108.5",,
+Alexandria MN (CBSA),"45.8852778,-95.3772222",,
+Cincinnati-Middletown OH-KY-IN (CBSA),"46.0036111,-112.6669444",,
+Wilson NC (CBSA),"46.0647222,-118.3419444",,
+Charlotte-Gastonia-Concord NC-SC (CBSA),"46.3580556,-94.2005556",,
+Mitchell SD (CBSA),"46.5436111,-87.3952778",,
+Jackson OH (CBSA),"46.5927778,-112.0352778",,
+Saint Louis (DMA),"46.7313889,-117.1786111",,
+Ocala FL (CBSA),"46.7325,-116.9991667",,
+New Orleans-Metairie-Kenner LA (CBSA),"46.8722222,-113.9930556",,
+Hastings NE (CBSA),"47.1052778,-104.7119444",,
+Jefferson City MO (CBSA),"47.1219444,-88.5688889",,
+Buffalo-Niagara Falls NY (CBSA),"47.4736111,-94.88",,
+Hereford TX (CBSA),"47.5002778,-111.3",,
+Topeka (DMA),"47.6588889,-117.425",,
+Laurel MS (CBSA),"48.1958333,-114.3119444",,
+Port St. Lucie-Fort Pierce FL (CBSA),"9,-80",,
+Pottsville PA (CBSA),"9,-80",,

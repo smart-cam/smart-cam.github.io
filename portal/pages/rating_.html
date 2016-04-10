@@ -1,0 +1,122 @@
+<link href="../css/bootstrap-slider.css" rel="stylesheet">
+<script src="../js/bootstrap-slider.min.js"></script>
+<style type="text/css">
+.slider.slider-horizontal {
+width: 450px;
+height: 20px;
+} 
+.slider.slider-vertical {
+height: 450px;
+}
+.slider.slider-vertical .slider-tick-label-container {
+margin-top: -10px;
+white-space: nowrap;
+}
+.slider.slider-vertical .slider-tick-label-container .slider-tick-label {
+padding-top: 4px;
+margin-left:25px;
+text-align: right;
+}
+
+/*#incomeSlider .slider-track-high {
+    background: #0480be ;
+}
+#incomeSlider .slider-track-low {
+    background: #0480be ;
+}
+
+#incomeSlider .slider-selection {
+    background: #0480be ;
+}*/
+</style>
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Lead Rating</h1>
+
+
+
+
+
+<div class="row">
+  <div class="col-lg-3"><label>Annual Household Income:</label></div>
+  <div class="col-lg-6"><input id="income" type="text"/></label></div>
+  <div class="col-lg-3"> $<span id="incomeSliderVal">80</span>K</div>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+// With JQuery
+$("#income").slider({
+    id: "incomeSlider",
+        // scale: 'logarithmic',
+    // min: 210,
+    // max: 0,
+    ticks: [0,10,25,50,75,100,125,150,200,210],
+    // ticks: [0,10,25,50,75,100,125,150,200,210].reverse(),
+    ticks_labels: ['','$10K','$25K','$50K','$75K','$100K','$125K','$150K','$200K', '$200K+'],
+    ticks_positions: [0,5,12.5, 25, 37.5, 50, 62.5, 75,90,100].reverse() ,
+    // ticks_positions: _.map([0,5,12.5, 25, 37.5, 50, 62.5, 75,90,100], function(num){ return 100 - num ; }),
+    value: 100,
+    orientation:"vertical"  ,  
+    // reversed : true
+});
+$("#income").on("slide", function(slideEvt) {
+    $("#incomeSliderVal").text(slideEvt.value);
+});
+
+    function rateIt(income, gender, age, edu){
+        rating = 0
+        if (income>=10000   && income <  14999)     rating = rating +  0.00031;
+        if (income>=100000  && income <  124999)    rating = rating +  0.0271;
+        if (income>=125000  && income <  149999)    rating = rating +  0.160549;
+        if (income>=15000   && income <  19999)     rating = rating +  0.00102;
+        if (income>=150000  && income <  199999)    rating = rating +  0.337935;
+        if (income>=20000   && income <  24999)     rating = rating +  0.000189;
+        if (income>=200000  && income <  100000000) rating = rating +  0.120424;
+        if (income>=25000   && income <  29999)     rating = rating +  0.068113;
+        if (income>=30000   && income <  34999)     rating = rating +  0.000928;
+        if (income>=35000   && income <  39999)     rating = rating +  0.000076;
+        if (income>=40000   && income <  44999)     rating = rating +  0.000194;
+        if (income>=45000   && income <  49999)     rating = rating +  0.000072;
+        if (income>=50000   && income <  59999)     rating = rating +  0.000132;
+        if (income>=60000   && income <  74999)     rating = rating +  0.062264;
+        if (income>=75000   && income <  99999)     rating = rating +  0.003614;
+        if (income>=0       && income <  10000)     rating = rating +  0.077694;
+
+
+        if (gender='F' && (  age>=18 && age < 24))                 rating = rating + 0.000894
+        if (gender='F' && (  age>=25 && age < 34)   && edu == 'Y') rating = rating + 0.000247
+        if (gender='F' && (  age>=25 && age < 34))                 rating = rating + 0.001653
+        if (gender='F' && (  age>=25 && age < 150)  && edu == 'Y') rating = rating + 0.013628
+        if (gender='F' && (  age>=25 && age < 150)  && edu == 'Y') rating = rating + 0.001921
+        if (gender='F' && (  age>=25 && age < 150))                rating = rating + 0.002089
+        if (gender='F' && (  age>=35 && age < 44)   && edu == 'Y') rating = rating + 0.000659
+        if (gender='F' && (  age>=35 && age < 44))                 rating = rating + 0.005604
+        if (gender='F' && (  age>=45 && age < 64)   && edu == 'Y') rating = rating + 0.000448
+        if (gender='F' && (  age>=45 && age < 64))                 rating = rating + 0.003736
+        if (gender='F' && (  age>=65 && age < 150)  && edu == 'Y') rating = rating + 0.00094
+        if (gender='F' && (  age>=65 && age < 150))                rating = rating + 0.002285
+        if (gender='F' && (  age>=0   && age < 150) && edu == 'Y') rating = rating + 0.013696
+        if (gender='M' && (  age>=18 && age < 24))                 rating = rating + 0.001122
+        if (gender='M' && (  age>=25 && age < 34)   && edu == 'Y') rating = rating + 0.000155
+        if (gender='M' && (  age>=25 && age < 34))                 rating = rating + 0.010014
+        if (gender='M' && (  age>=25 && age < 150)  && edu == 'Y') rating = rating + 0.00333
+        if (gender='M' && (  age>=25 && age < 150)  && edu == 'Y') rating = rating + 0.024949
+        if (gender='M' && (  age>=25 && age < 150))                rating = rating + 0.010387
+        if (gender='M' && (  age>=35 && age < 44)   && edu == 'Y') rating = rating + 0.00823
+        if (gender='M' && (  age>=35 && age < 44))                 rating = rating + 0.001309
+        if (gender='M' && (  age>=45 && age < 64)   && edu == 'Y') rating = rating + 0.000614
+        if (gender='M' && (  age>=45 && age < 64))                 rating = rating + 0.001251
+        if (gender='M' && (  age>=65 && age < 150)  && edu == 'Y') rating = rating + 0.004096
+        if (gender='M' && (  age>=65 && age < 150))                rating = rating + 0.009753
+        if (gender='M' && (  age>=0   && age < 150) && edu == 'Y') rating = rating + 0.001027
+        return rating;
+
+    }
+
+</script>
