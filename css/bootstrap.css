@@ -1142,7 +1142,7 @@ img {
           transition: all .2s ease-in-out;
 }
 .img-circle {
-  border-radius: 30%;
+  border-radius: 20%;
 }
 hr {
   margin-top: 20px;
