@@ -256,12 +256,26 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">User Interface</h2>
+                    <h3 class="section-subheading text-muted">What the user will interact with.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" align="center">
+                    <p class="text-muted">Enter Datetime range:
+                        <input type="text" name="daterange" size="40" onchange="queryDynamoDB(this.value)"/>
+                    </p>
+                    <video id="myV" controls  onended="playNextVideo()" width="320" height="240">
+                        <source src="splash.mp4" type="video/mp4">
+                    </video>
+                    <br>
+                    <p hidden id="RPiName"></p>
+                    <p hidden id="currentVideoTimestamp"></p>
+                    <br>
+                    <div id="chart_div" align="center"></div>
                 </div>
             </div>
         </div>
     </section>
-
-
 
     <!-- Team Section -->
     <section id="team" class="bg-light-gray">
