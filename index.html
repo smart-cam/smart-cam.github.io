@@ -62,7 +62,7 @@
                         <a class="page-scroll" href="#solution">Solution</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#challenges">Challenges</a>
+                        <a class="page-scroll" href="#improvements">Improvements</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#user-interface">User Inteface</a>
@@ -163,7 +163,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-justify large">
                     <h3 id="architecture">Architecture</h3>
-                        <p>As mentioned, the user just needs a <a target="_blank" col=#0000ff href="https://www.raspberrypi.org/">Raspberry Pi</a><a href="#fn:1" id="fnref:1" title="See footnote" class="footnote">1</a>  with a <a target="_blank" href="https://www.raspberrypi.org/products/camera-module/">camera module</a>. We chose <a target="_blank" href="https://aws.amazon.com/">Amazon Web Services (AWS)</a> as our cloud infrastructure, where the video files and a database with information related to them (where they came from, when they were recorded, and information about the detected motion) are stored, and additional video processing is performed. All the information is accessible through an interactive website (like <a href="#user-interface">this one</a> you’re now visiting).</p>
+                        <p>As mentioned, the user just needs a <a target="_blank" href="https://www.raspberrypi.org/">Raspberry Pi</a><a href="#fn:1" id="fnref:1" title="See footnote" class="footnote">1</a>  with a <a target="_blank" href="https://www.raspberrypi.org/products/camera-module/">camera module</a>. We chose <a target="_blank" href="https://aws.amazon.com/">Amazon Web Services (AWS)</a> as our cloud infrastructure, where the video files and a database with information related to them (where they came from, when they were recorded, and information about the detected motion) are stored, and additional video processing is performed. All the information is accessible through an interactive website (like <a href="#user-interface">this one</a> you’re now visiting).</p>
                         <p><img src="https://raw.githubusercontent.com/smart-cam/smart-cam/gh-pages/images/Architecture2.png" class="img-responsive img-centered" alt="Architecture Diagram" title=""></p>
                 </div>
             </div>
@@ -192,59 +192,29 @@
     </section>
 
     <!-- CHALLENGES Section -->
-    <section id="challenges" class="bg-light-gray">
+    <section id="improvements" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Challenges</h2>
-                    <h3 class="section-subheading text-muted">What took more time to go right.</h3>
+                    <h2 class="section-heading">Possible Improvements</h2>
+                    <h3 class="section-subheading text-muted">Things that might be added.</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-justify large">
-                    <p>Surveillance cameras are ubiquitous. Both individuals and organizations want to be alerted of any unexpected presence at their house or premises.</p>
-                    <p>Video image processing made it possible to record only what is needed (e.g., when motion or the presence of a certain object or person is detected) instead of indefinitely. Combined with machine learning techniques, it also allows to search patterns that can be useful for businesses such as finding hot spots, the most common paths taken by customers, and the most affluent hours. Hence, surveillance is not the only feature benefit of monitoring systems for business users.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify large">
-                    <h3 id="problem-statement">Problem Statement</h3>
-                    <p>Monitoring systems used to be complex and expensive. The advent of open-source computer-vision libraries like <em>OpenCV</em> and inexpensive single-board computers such as the <em>Raspberry Pi</em> has made building a monitoring system easier than ever, but  a solution based on them still presents some challenges to potential users:</p>
                     <ul>
-                        <li><p>There are no out-of-the-box solutions like this: users need the skills to integrate the required hardware and software components.</p></li>
-                        <li><p>Depending on the user’s needs, the hardware must have enough computing power to perform certain operations.</p></li>
-                        <li><p>Some users may require an integrated system that receives videos from different cameras / locations.</p></li>
+                        <li><p>Improve the system’s Sensitivity and Precision (and hence the its Accuracy). I.e., minimize the amount of false positives (motion is detected in the absence of it) and false negatives (there is motion but it’s not detected).</p></li>
+                            <ul><li>Recall that:</li></ul>
+<p><script type="math/tex; mode=display" id="MathJax-Element-214">\text{Sensitivity} = \frac{TP}{TP+FN}; \ \ \text{Precision} = \frac{TP}{TP+FP}</script> <script type="math/tex; mode=display" id="MathJax-Element-215">\text{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN}</script></p>                            
+                        </li>
+                        <li><p>Improve face detection (considering other algorithms aside from Viola Jones).</p></li>
+                        <li><p>Add more video processing features.</p>
+                        <ul>
+                            <li><p>Such as face recognition, which would allow the system to alert of certain individuals or not, or keep track of the ones it has already detected (thus counting all the different people that has been recorded so far).</p></li>
+                            <img class="img-responsive img-centered" src="https://raw.githubusercontent.com/smart-cam/smart-cam/gh-pages/images/FaceCounting2.png" alt="">
+                        </ul></li>
+                        <li><p>Implement an alert system that sends an email to the user upon certain events (whenever a video is captured, if the number of faces exceeds a certain threshold, etc.).</p></li>
                     </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify large">
-                    <h3 id="our-proposal">Our Proposal</h3>
-                        <p>We have built a <strong>cloud-based video monitoring system able to detect motion and count human faces</strong> (we focused on these two features, but others could be easily added in the future), that is simple and inexpensive but also powerful, reliable, and scalable. </p>
-                        <p>The system is aimed at two customer segments: <strong>home</strong> and <strong>business users</strong> (stores, offices, malls, …). Everything they need (at each location they want to monitor) is a Raspberry Pi with a camera module; most of the video processing is done in the cloud and all the information is accessible through a web browser.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify large">
-                    <h3 id="value-proposition">Value Proposition</h3>
-                        <p>Our system is:</p>
-                        <ul>
-                            <li><p><strong>Cost-effective</strong>: all the required hardware is a Raspberry Pi with a camera, whose price keeps dropping (the same applies to cloud computing and </p></li>
-                            <li><p><strong>Easy-to-install</strong>: users can purchase an standard Raspberry Pi at their convenience and install the necessary software by themselves (following a list of simple steps), or acquire one with the software pre-installed from us.</p>
-                            <ul>
-                                <li><p>An added benefit for home users in rented houses, who usually do not have the liberty to install comprehensive alarm systems.</p></li>
-                            </ul></li>
-                            <li><p><strong>Scalable</strong>: adding more cameras is just a matter of installing and registering additional Raspberry Pis.</p></li>
-                        </ul>
-                        <p>Other benefits:</p>
-                        <ul>
-                            <li><p>Users have <strong>real-time</strong> access to the information: alerts, analytics, and video files.</p></li>
-                            <li><p><strong>Dual functionality</strong> (especially for business users): The system can be used for surveillance purposes (e.g., once the store is closed) and also to get helpful insights to optimize business. For example, it can provide information about the amount of people entering a store (or moving through it) over time, which can be used to predict sales or adjust staff levels.</p>
-                                <ul>
-                                    <li><p>The face counting feature can also be helpful for home users, once face recognition is added: alerts would not be sent if the face of a person has been previously added to the system.</p></li>
-                                </ul></li>
-                            <li><p>The video files are stored in the cloud (so there is no risk that the Raspberry Pi will run out of storage).</p></li>
-                        </ul>
                 </div>
             </div>
         </div>
