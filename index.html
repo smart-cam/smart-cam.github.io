@@ -33,6 +33,24 @@
 
 </head>
 
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { 
+      preferredFont: "TeX", 
+      availableFonts: ["STIX","TeX"], 
+      styles: {".MathJax": {color: "#CCCCCC"}} 
+      }
+});
+</script>
+
 <body id="page-top" class="index">
 
     <!-- Navigation -->
@@ -205,8 +223,7 @@
                     <ul>
                         <li><p>Improve the system’s Sensitivity and Precision (and hence the its Accuracy). I.e., minimize the amount of false positives (motion is detected in the absence of it) and false negatives (there is motion but it’s not detected).</p></li>
                             <ul><li>Recall that:</li></ul>
-<p><script type="math/tex; mode=display" id="MathJax-Element-214">\text{Sensitivity} = \frac{TP}{TP+FN}; \ \ \text{Precision} = \frac{TP}{TP+FP}</script> <script type="math/tex; mode=display" id="MathJax-Element-215">\text{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN}</script></p>                            
-                        </li>
+                            <p><script type="math/tex; mode=display" id="MathJax-Element-214">\text{Sensitivity} = \frac{TP}{TP+FN}; \ \ \text{Precision} = \frac{TP}{TP+FP}</script> <script type="math/tex; mode=display" id="MathJax-Element-215">\text{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN}</script></p>
                         <li><p>Improve face detection (considering other algorithms aside from Viola Jones).</p></li>
                         <li><p>Add more video processing features.</p>
                         <ul>
