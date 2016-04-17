@@ -24,7 +24,7 @@ function playSelectedVideo(RPiName, selectedTimestamp) {
     // Playing video
     var params = {Bucket: data.Items[0].S3_BUCKET.S, Key: data.Items[0].S3_KEY.S};
     var url = s3.getSignedUrl('getObject', params);
-    //console.log(url);
+    console.log(url);
     document.getElementById("myV").src = url;
     document.getElementById("myV").currentTime = forwardVideoSec;
     document.getElementById("myV").play();
@@ -33,6 +33,8 @@ function playSelectedVideo(RPiName, selectedTimestamp) {
 
 function playNextVideo() {
 	// function to get next video filename
+  console.log(document.getElementById("RPiName").innerHTML);
+  console.log(document.getElementById("currentVideoTimestamp").innerHTML);
 	var params = {
 		'ExpressionAttributeValues' : {
 			':RN': {'S': document.getElementById("RPiName").innerHTML},
@@ -46,12 +48,12 @@ function playNextVideo() {
 		console.log(err);
 		currentVideoTimestamp = data.Items[0].START_TIME.N;
 		// Storing data
-		document.getElementById("RPiName").innerHTML = RPiName;
-    	document.getElementById("currentVideoTimestamp").innerHTML = currentVideoTimestamp;
-    	// Playing video
-	    var params = {Bucket: data.Items[0].S3_BUCKET.S, Key: data.Items[0].S3_KEY.S};
-	    var url = s3.getSignedUrl('getObject', params);
-	    document.getElementById("myV").src = url;
-	    document.getElementById("myV").play();
+		//document.getElementById("RPiName").innerHTML = RPiName;
+  	document.getElementById("currentVideoTimestamp").innerHTML = currentVideoTimestamp;
+  	// Playing video
+    var params = {Bucket: data.Items[0].S3_BUCKET.S, Key: data.Items[0].S3_KEY.S};
+    var url = s3.getSignedUrl('getObject', params);
+    document.getElementById("myV").src = url;
+    document.getElementById("myV").play();
 	});
 }
