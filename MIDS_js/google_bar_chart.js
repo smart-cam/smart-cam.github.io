@@ -12,6 +12,8 @@ function drawBackgroundColor(RPiName, RPiDataType, dataForLineGraph) {
     
     data.addColumn('datetime', 'TimeStamp');
     data.addColumn('number', 'Data');
+    // A column for custom tooltip content
+    data.addColumn({type: 'string', role: 'tooltip'});
 
     data.addRows(dataForLineGraph);
 

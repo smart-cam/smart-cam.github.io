@@ -1,4 +1,4 @@
-
+ 
 function queryDynamoDB(rangeStr) {
 	// Cleaning bar chart area
 	var list = document.getElementById("chart_div");
@@ -35,7 +35,7 @@ function queryDynamoDB(rangeStr) {
 				},
 				'KeyConditionExpression': 'RASP_NAME = :RN AND START_TIME BETWEEN :ST AND :ET',
 				//'Limit': 10,
-				'ProjectionExpression': 'RASP_NAME, START_TIME, #FIELD',
+				'ProjectionExpression': 'RASP_NAME, START_TIME, #FIELD, CLASSIFICATION',
 			};
 
 			table.query(params, function(err, data) {
@@ -73,10 +73,18 @@ function queryDynamoDB(rangeStr) {
 	function done(RPiName, RPiDataType) {
 		//console.log(RPiName, RPiDataType);
 		data = fullData[RPiDataType];
+		//console.log(data);
 		var dataForLineGraph = [];			// Array for Google charts
 		for (i=0; i < data.length; i++) {
 			//console.log(data[i].START_TIME.N);
 			var videoTimestamp = data[i].START_TIME.N * 1000;
+
+			if (typeof data[i].CLASSIFICATION !== "undefined") {
+				var classification = "Neural Net Classifier: " + data[i].CLASSIFICATION.S + "\n";
+			} else {
+				var classification = "";
+			}
+
 			videoTimestamp = parseInt(videoTimestamp) + 1;
 			//console.log(videoTimestamp);
 			if (typeof data[i][RPiDataType] !== "undefined") {
@@ -90,17 +98,20 @@ function queryDynamoDB(rangeStr) {
 			for (j=0; j < dataArray.length; j++) {
 				var ts = new Date(videoTimestamp);
 				var di = Number(dataArray[j].S);
-				dataForLineGraph.push([ts, di]);
+				var tt = "";
+				tt = "Data: " + di + "\n" + classification + ts;
+				dataForLineGraph.push([ts, di, tt]);
 				videoTimestamp += 1000;
 			}
 			// Adding NULL for break in graph
 			videoTimestamp += 500;
 			ts = new Date(videoTimestamp);
-			dataForLineGraph.push([ts, null]);
+			dataForLineGraph.push([ts, null, null]);
 		}
 		//console.log(dataForLineGraph);
 		if (dataForLineGraph.length > 0) {
 			drawBackgroundColor(RPiName, RPiDataType, dataForLineGraph);
+			//console.log(dataForLineGraph);
 		}
 
 	}
