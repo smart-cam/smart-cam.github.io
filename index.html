@@ -157,54 +157,30 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Overview</h2>
-                    <h3 class="section-subheading text-muted">What problem we tried to solve, for whom, and how.</h3>
+                    <h3 class="section-subheading text-muted">Our motivation for developing SmartCam</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-justify large">
-                    <p>Surveillance cameras are ubiquitous. Both individuals and organizations want to be alerted of any unexpected presence at their house or premises.</p>
-                    <p>Video image processing makes it possible to record not indefinitely but only what is needed (e.g., when motion or the presence of a certain object or person is detected). Combined with machine learning techniques, it also allows to search patterns that can be useful for businesses such as finding hot spots, the most common paths taken by customers, and the most affluent hours. Hence, security is not the only feature of smart monitoring systems.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify large">
-                    <h3 id="problem-statement">Problem Statement</h3>
-                    <p>Monitoring systems used to be complex and expensive. The advent of open-source computer-vision libraries like <em>OpenCV</em> and inexpensive single-board computers such as the <em>Raspberry Pi</em> has made building a monitoring system easier than ever, but  a solution based on them still presents some challenges to potential users:</p>
+                    <p>Surveillance cameras are the standard tool for homeowners and business operators who want to monitor their premises. But reviewing footage is an arduous task, especially for users with many cameras. Camera systems that are networked and offer a remote viewing interface are also expensive.</p>
+                    <p>We propose an inexpensive, scalable camera system that harnesses computer vision and machine learning techniques to save home and business users time. Our system only records video footage that is likely to be useful (where motion is occurring) and shows the user a summary of the actual video contents, eliminating the need to skip through hours of footage. We offer the following features and advantages:</p>
+
                     <ul>
-                        <li><p>There are no out-of-the-box solutions like this: users need the skills to integrate the required hardware and software components.</p></li>
-                        <li><p>Depending on the user’s needs, the hardware must have enough computing power to perform certain operations.</p></li>
-                        <li><p>Some users may require an integrated system that receives videos from different cameras / locations.</p></li>
+                        <li><p><strong>Inexpensive, commodity hardware based on the <em>Raspberry Pi</em></strong>. The price of our hardware continues to drop, whereas existing “smart” cameras cost 100-200 dollars (two to three times ours).</p></li>
+
+                        <li><p><strong>Cloud-based storage and processing in <em>Amazon Web Services</em>.</strong> Our backend has near-unlimited storage and scales to work with any number of cameras.</strong></p></li>
+
+                        <li><p><strong>Automatic motion detection.</strong> Our system only records video that contains motion, so you won’t waste time viewing blank footage.</li></p>
+
+                        <li><p><strong>Face detection and face counting.</strong> Want to know how much foot traffic is crossing through your store, or even home, at any point during the day? We can keep count and provide you a summary or detailed look at activity.</p></li>
+
+                        <li><p><strong>Image recognition.</strong> What occurred in-frame when the camera detected motion? Did a person walk by, or was it just a housepet? We’ll give you a quick summary so you don’t have to watch every video.</li></p>
+
+                        <li><p><strong>Web interface.</strong> Review data collected by our system and watch video footage from your computer or phone, from wherever you are.</p></li>
+
+                        <li><p><strong>Live data streaming.</strong> Monitor a camera in real time from your browser. You’ll see all the video frames, regardless of whether any motion is occurring.</p></li>
+
                     </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify large">
-                    <h3 id="our-proposal">Our Proposal</h3>
-                        <p>We have built a <strong>cloud-based video monitoring system able to detect motion and count human faces</strong> (we focused on these two features, but others could be easily added in the future), that is simple and inexpensive but also powerful, reliable, and scalable. </p>
-                        <p>The system is aimed at two customer segments: <strong>home</strong> and <strong>business users</strong> (stores, offices, malls, …). Everything they need (at each location they want to monitor) is a <em>Raspberry Pi</em> with a camera module; most of the video processing is done in the cloud and all the information is accessible through a web browser.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify large">
-                    <h3 id="value-proposition">Value Proposition</h3>
-                        <p>Our system is:</p>
-                        <ul>
-                            <li><p><strong>Cost-effective</strong>: all the required hardware is a <em>Raspberry Pi</em> with a camera, whose price keeps dropping (the same applies to cloud computing).</p></li>
-                            <li><p><strong>Easy-to-install</strong>: users can purchase an standard <em>Raspberry Pi</em> at their convenience and install the necessary software by themselves (following a list of simple steps), or acquire one with the software pre-installed from us.</p>
-                            <ul>
-                                <li><p>An added benefit for home users in rented houses, who usually do not have the liberty to install comprehensive alarm systems.</p></li>
-                            </ul></li>
-                            <li><p><strong>Scalable</strong>: adding more cameras is just a matter of installing and registering additional <em>Raspberry Pis</em>.</p></li>
-                        </ul>
-                        <p>Other benefits:</p>
-                        <ul>
-                            <li><p>Users have <strong>real-time</strong> access to the information: alerts, analytics, and video files.</p></li>
-                            <li><p><strong>Dual functionality</strong> (especially for business users): The system can be used for surveillance purposes (e.g., once the store is closed) and also to get helpful insights to optimize business. For example, it can provide information about the amount of people entering a store (or moving through it) over time, which can be used to predict sales or adjust staff levels.</p>
-                                <ul>
-                                    <li><p>The face counting feature can also be helpful for home users, once face recognition is added: alerts would not be sent if the face of a person has been previously added to the system.</p></li>
-                                </ul></li>
-                            <li><p>The video files are stored in the cloud (so there is no risk that the <em>Raspberry Pi</em> will run out of storage).</p></li>
-                        </ul>
                 </div>
             </div>
         </div>
@@ -216,13 +192,18 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Our Solution</h2>
-                    <h3 class="section-subheading text-muted">How our solution is built (and why it works so well).</h3>
+                    <h3 class="section-subheading text-muted">How we built our solution (and why it works so well)</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-justify large">
                     <h3 id="architecture">Architecture</h3>
-                        <p>As mentioned, the user just needs a <em><a target="_blank" href="https://www.raspberrypi.org/">Raspberry Pi</a></em><a href="#notes:1" id="fnref:1" title="See footnote" class="footnote"><sup>1</sup></a>  with a <a target="_blank" href="https://www.raspberrypi.org/products/camera-module/">camera module</a>. We chose <a target="_blank" href="https://aws.amazon.com/">Amazon Web Services (AWS)</a> as our cloud infrastructure, where the video files and a database with information related to them (where they came from, when they were recorded, and information about the detected motion) are stored, and additional video processing is performed. All the information is accessible through an interactive website (like <a href="#user-interface">this one</a> you’re now visiting).</p>
+                        <p>Our architecture, illustrated below, consisents of three major blocks:</p>
+                        <ul>
+                            <li><p>At least one <em><a target="_blank" href="https://www.raspberrypi.org/">Raspberry Pi</a></em><a href="#notes:1" id="fnref:1" title="See footnote" class="footnote"><sup>1</sup></a>  with a <a target="_blank" href="https://www.raspberrypi.org/products/camera-module/">camera module</a>.</p></li>
+                            <li><p><a target="_blank" href="https://aws.amazon.com/">Amazon Web Services (AWS)</a> cloud infrastructure, comprising storage for video files, a database for metadata (e.g., source of video, timestamp, and information about contents), all of our backend video processing.</p></li>
+                            <li><p>An interactive website with the <a href="#user-interface">user interface</a>.</p></li><br>
+                        </ul>
                         <p><img src="https://raw.githubusercontent.com/smart-cam/smart-cam.github.io/master/img/Architecture2.png" class="img-responsive img-centered" alt="Architecture Diagram" title=""></p>
                 </div>
             </div>
@@ -230,20 +211,13 @@
                 <div class="col-lg-8 col-lg-offset-2 text-justify large">
                     <h3 id="step-by-step-process">Step-by-step Process</h3>
                         <ol>
-                            <li><p><strong>Motion detection</strong> is performed by the <strong><em>Raspberry Pi</em></strong>, using <a target="_blank" href="https://www.python.org/">Python</a> as programming language and <em><a target="_blank" href="http://opencv.org/">OpenCV</a></em> libraries for video processing.</p>
-                            <ul>
-                                <li><p>From all the motion detection algorithms available in <em>OpenCV</em>, we selected one<a href="#notes:2" id="fnref:2" title="See footnote" class="footnote"><sup>2</sup></a> based on <a target="_blank" href="http://www.ee.surrey.ac.uk/CVSSP/Publications/papers/KaewTraKulPong-AVBS01.pdf">Gaussian Mixture Model-based foreground and background segmentation</a>: a background probability model is constructed for each pixel, adapting to background changes by incrementally updating the mean and variance of existing Gaussians, incorporating some and discarding others.</p></li>
-                                <li><p>For each frame in the video, the background and foreground are segmented: the former will be largely static over consecutive frames<a href="#notes:3" id="fnref:3" title="See footnote" class="footnote"><sup>3</sup></a>, so substantial changes are detected and assigned to the latter (and the background is then subtracted).</p></li>
-                                <li><p>The foreground may contain some noise (e.g., due to small changes in lighting conditions), which would result in false positives (motion is detected in the absence of it). To reduce the presence of those, we set a threshold to the number of pixels in a (320×240) frame that correspond to the foreground, whose final value is 0.05 (3,840 pixels).</p></li>
-                            </ul></li>
-                            <li><p>The step above allows to <strong>upload to the cloud</strong> only those videos of interest, in which motion has been detected. The camera is constantly working, and upon motion detection a video file (of 10 seconds) is uploaded to a bucket in <a target="_blank" href="https://aws.amazon.com/s3/">Amazon S3</a>. Information about the video file (the <em>Raspberry Pi</em> ID, the timestamp, …) and the foreground size (the ratio of pixels corresponding to foreground) is also written in a <a target="_blank" href="https://aws.amazon.com/dynamodb/">DynamoDB</a> (NoSQL) database, in JSON format.</p></li>
-                            <li><p>Another <em>Python</em> program running in an <a target="_blank" href="https://aws.amazon.com/ec2/">Amazon EC2</a> virtual server reads from both sources (S3 and DynamoDB) to <strong>count faces</strong> in each video. The script queries the database for still unprocessed videos, runs the face counting algorithm on those, and updates the database.</p>
-                            <ul>
-                                <li><p>We used a <a target="_blank" href="http://docs.opencv.org/3.0-alpha/modules/objdetect/doc/cascade_classification.html">cascade classifier</a> based on the <a target="_blank" href="https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework">Viola–Jones object detection framework</a>, which is capable of processing images extremely rapidly while achieving high detection rates.<br>
-                                First, a cascade<a href="#notes:4" id="fnref:4" title="See footnote" class="footnote"><sup>4</sup></a> of boosted<a href="#notes:5" id="fnref:5" title="See footnote" class="footnote"><sup>5</sup></a> classifiers is trained with a few hundred sample views of a particular object (a face, in our case), called positive examples, and negative examples (arbitrary images of similar size). After the classifer is trained, it will output a 1 if the region is likely to show the object, and 0 otherwise. To search for the object in the whole image and in different sizes, the search window is moved across and the scan procedure is done several times at different scales.</p></li>
-                                <li><p>Doing this part of the video processing (and others that might be added in the future) in the cloud has the advantage of <strong>freeing up the <em>Raspberry Pi</em> from using its limited resources</strong>.</p></li>
-                            </ul></li>
-                            <li><p>Finally, the user can access all the videos and information stored in <em>S3</em> and <em>DynamoDB</em>, respectively, through an interactive website (<a href="#user-interface">see below for an example</a>), where he or she can overview, zoom, filter, and drill up and down the foreground size and face count of all the videos recorded by the <em>Raspberry Pis</em>, as well as play them.</p></li>
+                            <li><p>The Raspberry Pi processes incoming video frames from the camera module and performs motion detection using <a target="_blank" href="https://www.python.org/">Python</a> and the <a target="_blank" href="http://opencv.org/">OpenCV</a> library for video processing. The Raspberry Pi segments videos into 10 second files and uploads each file containing motion to a bucket in <a target="_blank" href="https://aws.amazon.com/s3/">Amazon S3</a> and metadata (video source, timestamp) in JSON format to <a target="_blank" href="https://aws.amazon.com/dynamodb/">Amazon DynamoDB</a>.</p></li>
+
+                            <li><p>A Python script running in an <a target="_blank" href="https://aws.amazon.com/ec2/">Amazon EC2</a> virtual server queries DynamoDB for unprocessed videos, runs the face detection and counting algorithms on each video, and writes the results back to DynamoDB.</p></li>
+
+                            <li><p>A second Python script running on a more powerful EC2 instance operates similarly, except it performs image classification on the video. We use a neural net trained using <a target="_blank" href="https://www.tensorflow.org/">TensorFlow</a>. The script samples frames from the video, obtains classification results from TensorFlow, and writes aggregated results back to DynamoDB.</p></li>
+
+                            <li><p>The user can access all videos and information stored in <em>S3</em> and <em>DynamoDB</em> through an interactive website (<a href="#user-interface">see below</a>). The website allows a user to view video footage and data over a custom date range, as well as watch one of the <em>Raspberry Pi</em> cameras in real time.</p></li>
                         </ol>
                 </div>
             </div>
