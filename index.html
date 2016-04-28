@@ -224,7 +224,28 @@
                 <div class="col-lg-8 col-lg-offset-2 text-justify large">
                     <h3 id="Algorithms">Algorithms</h3>
                     <h5>Motion Detection</h4>
-                        <p></p>
+                        <p>
+                            Motion detection is an unsolved problem. There are many ways to approach motion detection. Our approach to motion detection uses two algorithms from the OpenCV library:
+                            <ul>
+                                <li>Background Subtraction using Mixture of Gaussians</li>
+                                <li>Canny Edge Detection</li>
+                            </ul>
+                            Background Subtraction using Mixture of Gaussians assumes that the camera sees the background most of the time and the foreground comes into the field of view intermittently. With this assumption, the algorithm estimates foreground pixel by pixel. Over a sliding window, for each pixel it estimates between 3 to 5 Gaussians. The Gaussians are weighted based on the number of data points they have. Pixels that fall in the ‘lighter’ gaussians are considered to be foreground. We trigger a frame to have motion if more than 5% of the pixels are foreground.
+                            Each frame is blurred using median blurring before this algorithm is applied. The below videos shows this in action.
+                        </p>
+                        <p>
+
+                            <div class="col-lg-12" align="center">
+                                <iframe width="224" height="168" src="https://www.youtube.com/v/RIzVqapk-SQ" frameborder="0"></iframe>
+                                <iframe width="224" height="168" src="https://www.youtube.com/v/H_DoSC01Uv4" frameborder="0"></iframe>
+                                <iframe width="224" height="168" src="https://www.youtube.com/v/h9dCmQ_1XjQ" frameborder="0"></iframe>
+                            </div>
+                            When the foreground pixels are between 0.1% to 5% we have applied an additional filter to reduce noise. First, we use Canny edge detector to detect edges in a frame. Then, we calculate center of mass of the edges. This can be seen in action in the below video. 
+                            When the foreground is between 0.1% to 5% motion is triggered if the center of mass also moves by more than 5 pixels between each second
+                            <div align="center">
+                                <iframe width="224" height="168" src="https://www.youtube.com/v/txMB1Li0LrI" frameborder="0"></iframe>
+                            </div>
+                        </p>
                     <h5>Face Detection</h4>
                         <p>
                             Face Detection is done using an opencv implementation of the <a target="_blank" href="http://www.vision.caltech.edu/html-files/EE148-2005-Spring/pprs/viola04ijcv.pdf">Viola Jones algorithm</a>. The algorithm uses the following 4 broad concepts to do face detection:
