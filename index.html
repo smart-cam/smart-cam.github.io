@@ -279,13 +279,18 @@
                             <div class="col-lg-12 col-lg-offset-2">
                                 <iframe width="420" height="315" src="https://www.youtube.com/embed/3mui7te1XfQ" frameborder="0" allowfullscreen></iframe>
                             </div>
-                            <br/>
-                            <br/>
-
-                            <strong>Open Datasets used for testing:</strong>
+                        </p>
+                        <p>
+                            <h5>Open Datasets used for testing</h5>
                             <ul>
                                 <li><a target="_blank" href="http://arma.sourceforge.net/chokepoint/">ChokePoint Dataset</a></li>
                                 <li><a target="_blank" href="http://www.face-rec.org/databases/">Face Recognition DB</a></li>
+                            </ul>
+                        </p>
+                        <p>
+                            <h5>Future Considerations</h5>
+                            <ul>
+                                <li><a target="_blank" href="http://arxiv.org/abs/1502.02766">Multi-view Face Detection Using Deep Convolutional Neural Networks</a></li>
                             </ul>
                         </p>
                     <h4>Image Classification</h4>
@@ -298,10 +303,17 @@
                         <p>This feature complemented Viola Jones nicely, since it is much more tolerant to lighting, and face/body postures - no longer we were restricted to faces to identify a human. However, in its current form, it is slow and takes almost half a minute to process a single frame, and is therefore not suited for real time processing.</p>
 
                         <p>
-                            <strong>Open Datasets used for training:</strong>
+                            <h5>Open Datasets used for training/testing</h5>
                             <ul>
                                 <li><a target="_blank" href="http://web.mit.edu/torralba/www/indoor.html">MIT: Indoor Scene Recognition</a></li>
                                 <li><a target="_blank" href="https://www.kaggle.com/c/dogs-vs-cats">Kaggle: Dogs v/s Cats</a></li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <h5>Future Considerations</h5>
+                            <ul>
+                                <li>Re-train tensor flow Inception_V3 model with more classes and a much richer training set using a cluster of GPU(s)</li>
                             </ul>
                         </p>
 
