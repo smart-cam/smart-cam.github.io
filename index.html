@@ -236,17 +236,22 @@
                                 <li><strong>HAAR Features:</strong> These are like convolutional filters which can be thought of as small rectangles with black/white regions that can slide over the entire image and each feature is a single value obtained by subtracting sum of pixels under white rectangle from sum of pixels under black rectangle.
                                     <img src="img/vj_haar_features.jpg" class="img-responsive img-centered" alt="HAAR Features" title="">
                                 </li>
-                                <li><strong>Integral Image:</strong> Now all possible sizes and locations of each kernel is used to calculate plenty of features. (Even a 24x24 window results over 160000 features. Just imagine how much computation it needs?). For each feature calculation, the algorithm needs to calculate the sum of pixels under white and black rectangles. To solve this, integral images was introduced which simplifies calculation of sum of pixels - how large may be the number of pixels, this operation involves just four pixels from all four corners of the region. It makes things super-fast.</li>
+                                <li><strong>Integral Image:</strong> Now all possible sizes and locations of each kernel is used to calculate plenty of features. (Even a 24x24 window results over 160000 features. Just imagine how much computation it needs?). For each feature calculation, the algorithm needs to calculate the sum of pixels under white and black rectangles. To solve this, integral images was introduced which simplifies calculation of sum of pixels - how large may be the number of pixels, this operation involves just four pixels from all four corners of the region. It makes things super-fast.
+                                    <img src="img/vj_integral_image.png" class="img-responsive img-centered" alt="Integral Image" title="">
+                                </li>
                                 <li><strong>Adaboost:</strong> Among all these features calculated, most of them are irrelevant. So what is the best way to select the best features out of 160000+ features? It is achieved by Adaboost learning algorithm. The paper says even 200 features provide detection with 95% accuracy. The final setup had around 6000 features. (Imagine a reduction from 160000+ features to just 6000 features. That is a big gain)
                                      <img src="img/vj_imp_features.png" class="img-responsive img-centered" alt="Adaboost" title="">
                                 </li>
                                 <li><strong>Cascade of Classifiers:</strong> Instead of applying all the 6000 features on a window, the idea is to group the features into different stages of classifiers and apply one-by-one. (Normally first few stages will contain very less number of features). If a window fails the first stage, it is discarded and remaining features are not considered. If it passes, apply the second stage of features and the process is continued. The window which passes all stages is detected as a face region. Authors' detector had 6000+ features with 38 stages with 1, 10, 25, 25 and 50 features in first five stages. (Two features in the above image is actually obtained as the best two features from Adaboost). According to authors, on an average, 10 features out of 6000+ are evaluated per sub-window.
-                                    <img src="img/vj_face.jpg" class="img-responsive img-centered" alt="Viola Jones" title="">
+                                    <img src="img/vj_cascade.png" class="img-responsive img-centered" alt="Cascade" title="">                                    
                                 </li>
                             </ol>
+                        </p>
+                        <p>
+                            Face Detection using Viola Jones is extremely fast and works in near real time.  Faces are detected in each frame (of the video/stream), and since the same faces can appear in subsequent frames, Histogram Similarity of the Regions of Interests between subsequent frames is used to count the number of unique faces per frame.
                             <br/>
                             <br/>
-                            Face Detection using Viola Jones is extremely fast and works in near real tie.  Faces are detected in each frame (of the video/stream), and since the same faces can appear in subsequent frames, Histogram Similarity of the Regions of Interests between subsequent frames is used to count the number of unique faces per frame.
+                            <img src="img/vj_face.jpg" class="img-responsive img-centered" alt="Viola Jones" title="">
                         </p>
                     <h5>Image Classification</h4>
                         <p>For classifying the images/frames within the uploaded video, a technique called transfer learning was used which basically involved retraining the final layer of <a target="_blank" href="https://www.tensorflow.org/versions/r0.8/tutorials/image_recognition/index.html">TensorFlow’s Inception_V3 Model</a>, that was originally trained on the ImageNET dataset. Currently, the images/frames are classified into 6 categories: person, indoor, garage, outdoor, dog, cat, which can be enhanced and/or improved by training on a cluster of GPUs with a richer training set. We used handcrafted training data with images from open data sources, and ones generated by our Raspberry Pis and labeled them into one of the 6 categories.</p>
@@ -261,13 +266,95 @@
         </div>
     </section>
 
+    <!-- CHALLENGES Section -->
+    <section id="improvements" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Possible Improvements</h2>
+                    <h3 class="section-subheading text-muted">Things that might be added in the future.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-justify large">
+                    <ul>
+                        <li><p>Improve the system’s Sensitivity and Precision (and hence its Accuracy). I.e., minimize the amount of false positives (motion is detected in the absence of it) and false negatives (there is motion but it’s not detected).</p></li>
+                            $$\text{Sensitivity} = \frac{TP}{TP+FN}$$
+                            $$\text{Precision} = \frac{TP}{TP+FP}$$
+                            $$\text{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN}$$
+                            <!--<p><script type="math/tex; mode=display" id="MathJax-Element-214">\text{Sensitivity} = \frac{TP}{TP+FN}; \ \ \text{Precision} = \frac{TP}{TP+FP}</script> <script type="math/tex; mode=display" id="MathJax-Element-215">\text{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN}</script></p>-->
+                        <li><p>Improve face detection (considering other algorithms aside from Viola Jones).</p></li>
+                        <li><p>Add more video processing features.</p>
+                        <ul>
+                            <li><p>Such as face recognition, which would allow the system to alert of certain individuals or not, or keep track of the ones it has already detected (thus counting all the different people that has been recorded so far).</p></li>
+                            <p><img class="img-responsive img-centered" src="https://raw.githubusercontent.com/smart-cam/smart-cam.github.io/master/img/FaceCounting2.png" alt=""></p>
+                        </ul></li>
+                        <li><p>Implement an alert system that sends an email to the user upon certain events (whenever a video is captured, if the number of faces exceeds a certain threshold, etc.).</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Interface Section -->
+    <section id="user-interface">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">User Interface</h2>
+                </div>
+
+                <div class="col-lg-12 col-md-offset-2">
+
+                    <div class="col-xs-2">
+                            <label for="RPiNameSelect">Select location:</label>
+                            <select class="form-control" id="RPiNameSelect" onchange="locationSelection()">
+                                <option>FrontDoor</option>
+                                <option>Entrance</option>
+                                <option>Garage</option>
+                            </select>
+                    </div>
+                    <div class="col-xs-4">
+                            <label for="daterange" id="dtPickerLabel">Enter Datetime range to watch Recorded Video:</label>
+                            <input type="text" class="form-control" name="daterange" id="dtPicker" onchange="queryDynamoDB()">
+                    </div>
+                    <div class="col-xs-2">
+                            <label for="LiveRecorded">Watch Live video:</label>
+                            <select class="form-control" id="LiveRecorded" onchange="videoTypeSelection(this.value)">
+                                <option>No</option>
+                                <option>Yes</option>
+                            </select>
+                    </div>
+                </div>
+
+                <div id="videoDiv" class="col-lg-12 col-md-offset-2">
+                    <br>
+                    <div class="col-xs-4">
+                        <video id="myV" controls  onended="playNextVideo()" width="320" height="240">
+                            <source src="splash.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-xs-4">
+                        <img id="liveImageID" scr="imageSplash.jpg" alt="Live Video Feed" style="width:320px;height:240px;">
+                    </div>
+                </div>
+                <div>
+                    <p hidden id="RPiName"></p>
+                    <p hidden id="currentVideoTimestamp"></p>
+                </div>
+                <div class="col-lg-12 text-center" id="chart_div" align="center"></div>
+                
+            </div>
+        </div>
+    </section>
+
     <!-- Slides Section -->
     <section id="slides">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Slides</h2>
-                    <h3 class="section-subheading text-muted">A Brief Overview</h3>
+                    <h3 class="section-subheading text-muted">A High Level Summary of SmartCam Project</h3>
                 </div>
             </div>
             <div class="row">
@@ -349,88 +436,6 @@
                       <span class="sr-only">Next</span>
                     </a>
                 </div>
-        </div>
-    </div>
-
-    <!-- CHALLENGES Section -->
-    <section id="improvements" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Possible Improvements</h2>
-                    <h3 class="section-subheading text-muted">Things that might be added in the future.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify large">
-                    <ul>
-                        <li><p>Improve the system’s Sensitivity and Precision (and hence its Accuracy). I.e., minimize the amount of false positives (motion is detected in the absence of it) and false negatives (there is motion but it’s not detected).</p></li>
-                            $$\text{Sensitivity} = \frac{TP}{TP+FN}$$
-                            $$\text{Precision} = \frac{TP}{TP+FP}$$
-                            $$\text{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN}$$
-                            <!--<p><script type="math/tex; mode=display" id="MathJax-Element-214">\text{Sensitivity} = \frac{TP}{TP+FN}; \ \ \text{Precision} = \frac{TP}{TP+FP}</script> <script type="math/tex; mode=display" id="MathJax-Element-215">\text{Accuracy}=\frac{TP+TN}{TP+TN+FP+FN}</script></p>-->
-                        <li><p>Improve face detection (considering other algorithms aside from Viola Jones).</p></li>
-                        <li><p>Add more video processing features.</p>
-                        <ul>
-                            <li><p>Such as face recognition, which would allow the system to alert of certain individuals or not, or keep track of the ones it has already detected (thus counting all the different people that has been recorded so far).</p></li>
-                            <p><img class="img-responsive img-centered" src="https://raw.githubusercontent.com/smart-cam/smart-cam.github.io/master/img/FaceCounting2.png" alt=""></p>
-                        </ul></li>
-                        <li><p>Implement an alert system that sends an email to the user upon certain events (whenever a video is captured, if the number of faces exceeds a certain threshold, etc.).</p></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- User Interface Section -->
-    <section id="user-interface">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">User Interface</h2>
-                </div>
-
-                <div class="col-lg-12 col-md-offset-2">
-
-                    <div class="col-xs-2">
-                            <label for="RPiNameSelect">Select location:</label>
-                            <select class="form-control" id="RPiNameSelect" onchange="locationSelection()">
-                                <option>FrontDoor</option>
-                                <option>Entrance</option>
-                                <option>Garage</option>
-                            </select>
-                    </div>
-                    <div class="col-xs-4">
-                            <label for="daterange" id="dtPickerLabel">Enter Datetime range to watch Recorded Video:</label>
-                            <input type="text" class="form-control" name="daterange" id="dtPicker" onchange="queryDynamoDB()">
-                    </div>
-                    <div class="col-xs-2">
-                            <label for="LiveRecorded">Watch Live video:</label>
-                            <select class="form-control" id="LiveRecorded" onchange="videoTypeSelection(this.value)">
-                                <option>No</option>
-                                <option>Yes</option>
-                            </select>
-                    </div>
-                </div>
-
-                <div id="videoDiv" class="col-lg-12 col-md-offset-2">
-                    <br>
-                    <div class="col-xs-4">
-                        <video id="myV" controls  onended="playNextVideo()" width="320" height="240">
-                            <source src="splash.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="col-xs-4">
-                        <img id="liveImageID" scr="imageSplash.jpg" alt="Live Video Feed" style="width:320px;height:240px;">
-                    </div>
-                </div>
-                <div>
-                    <p hidden id="RPiName"></p>
-                    <p hidden id="currentVideoTimestamp"></p>
-                </div>
-                <div class="col-lg-12 text-center" id="chart_div" align="center"></div>
-                
-            </div>
         </div>
     </section>
 
