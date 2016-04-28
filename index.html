@@ -227,13 +227,11 @@
                         <p>
                             Motion detection is an unsolved problem. There are many ways to approach motion detection. Our approach to motion detection uses two algorithms from the OpenCV library:
                             <ul>
-                                <li>Background Subtraction using Mixture of Gaussians</li>
-                                <li>Canny Edge Detection</li>
+                                <li><a target="_blank" href="http://docs.opencv.org/3.1.0/d1/dc5/tutorial_background_subtraction.html#gsc.tab=0">Background Subtraction using Mixture of Gaussians</a></li>
+                                <li><a target="_blank" href="http://docs.opencv.org/3.1.0/da/d22/tutorial_py_canny.html#gsc.tab=0">Canny Edge Detection</a></li>
                             </ul>
                             Background Subtraction using Mixture of Gaussians assumes that the camera sees the background most of the time and the foreground comes into the field of view intermittently. With this assumption, the algorithm estimates foreground pixel by pixel. Over a sliding window, for each pixel it estimates between 3 to 5 Gaussians. The Gaussians are weighted based on the number of data points they have. Pixels that fall in the ‘lighter’ gaussians are considered to be foreground. We trigger a frame to have motion if more than 5% of the pixels are foreground.
                             Each frame is blurred using median blurring before this algorithm is applied. The below videos shows this in action.
-                        </p>
-                        <p>
 
                             <div class="col-lg-12" align="center">
                                 <iframe width="224" height="168" src="https://www.youtube.com/v/RIzVqapk-SQ" frameborder="0"></iframe>
@@ -245,6 +243,10 @@
                             <div align="center">
                                 <iframe width="224" height="168" src="https://www.youtube.com/v/txMB1Li0LrI" frameborder="0"></iframe>
                             </div>
+                            <strong>Open Datasets used for testing:</strong>
+                            <ul>
+                                <li><a target="_blank" href="http://wordpress-jodoin.dmi.usherb.ca/dataset2014/">ChangeDetection.net Dataset</a></li>
+                            </ul>
                         </p>
                     <h5>Face Detection</h4>
                         <p>
