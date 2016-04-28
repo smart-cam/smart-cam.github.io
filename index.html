@@ -158,7 +158,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-justify large">
                     <p>Surveillance cameras are the standard tool for homeowners and business operators who want to monitor their premises. But reviewing footage is an arduous task, especially for users with many cameras. Camera systems that are networked and offer a remote viewing interface are also expensive.</p>
-                    <p>We propose an inexpensive, scalable camera system that harnesses computer vision and machine learning techniques to save home and business users time. Our system only records video footage that is likely to be useful (where motion is occurring) and shows the user a summary of the actual video contents, eliminating the need to skip through hours of footage. We offer the following features and advantages:</p>
+                    <p>We designed an inexpensive, scalable camera system that harnesses computer vision and machine learning techniques to save home and business users time. Our system only records video footage that is likely to be useful (where motion is occurring) and shows the user a summary of the actual video contents, eliminating the need to skip through hours of footage. We offer the following features and advantages:</p>
 
                     <ul>
                         <li><p><strong>Inexpensive, commodity hardware based on the <em>Raspberry Pi</em></strong>. The price of our hardware continues to drop, whereas existing “smart” cameras cost 100-200 dollars (two to three times ours).</p></li>
@@ -174,6 +174,9 @@
                         <li><p><strong>Web interface.</strong> Review data collected by our system and watch video footage from your computer or phone, from wherever you are.</p></li>
 
                         <li><p><strong>Live data streaming.</strong> Monitor a camera in real time from your browser. You’ll see all the video frames, regardless of whether any motion is occurring.</p></li>
+
+                        <li><p><strong>Open source.</strong> You can see our code <a target="_blank" href="https://github.com/smart-cam/smart-cam">here</a>.</p></li>
+
 
                     </ul>
                 </div>
@@ -195,7 +198,7 @@
                     <h3 id="architecture">Architecture</h3>
                         <p>Our architecture, illustrated below, consisents of three major blocks:</p>
                         <ul>
-                            <li><p>At least one <em><a target="_blank" href="https://www.raspberrypi.org/">Raspberry Pi</a></em><a href="#notes:1" id="fnref:1" title="See footnote" class="footnote"><sup>1</sup></a>  with a <a target="_blank" href="https://www.raspberrypi.org/products/camera-module/">camera module</a>.</p></li>
+                            <li><p>At least one <a target="_blank" href="https://www.raspberrypi.org/">Raspberry Pi</a> with a <a target="_blank" href="https://www.raspberrypi.org/products/camera-module/">camera module</a>.</p></li>
                             <li><p><a target="_blank" href="https://aws.amazon.com/">Amazon Web Services (AWS)</a> cloud infrastructure, comprising storage for video files, a database for metadata (e.g., source of video, timestamp, and information about contents), all of our backend video processing.</p></li>
                             <li><p>An interactive website with the <a href="#user-interface">user interface</a>.</p></li><br>
                         </ul>
@@ -534,28 +537,6 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <p class="large text-muted">Would you like to know more about this project or our team?<br>Check out <a target="_blank" href="https://github.com/smart-cam/smart-cam">our code</a> or <a target="_blank" href="mailto:mids-w210@googlegroups.com">contact us</a> and we’ll be glad to tell you more.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- NOTES Section -->
-    <section id="notes">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Notes</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-justify large footnotes">
-                    <ol>
-                        <li id="notes:1"><p>We used several <a target="_blank" href="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/">Raspberry Pi 2 Model B</a>, the latest model as of February 2016, when we started working on this project. <a href="#fnref:1" title="Return to article" class="reversefootnote">↩</a></p></li>
-                        <li id="notes:2"><p>We also tried many other alternatives, and finally chose the one above based on its performance in terms of Sensitivity and Precision. <a href="#fnref:2" title="Return to article" class="reversefootnote">↩</a></p></li>
-                        <li id="notes:3"><p>Even small changes in shadowing and lighting conditions can make the background vary, but the algorithm provides some mechanisms to discern between those effects and actual motion, so only the latter is included in the foreground. Of course those mechanisms are not perfect, so the best results are obtained under controlled lighting conditions (and using fixed-mounted cameras). <a href="#fnref:3" title="Return to article" class="reversefootnote">↩</a></p></li>
-                        <li id="notes:4"><p>The classifier consists of several simpler classifiers (stages) that are applied subsequently to a region of interest until at some stage the candidate is rejected or all the stages are passed. <a href="#fnref:4" title="Return to article" class="reversefootnote">↩</a></p></li>
-                        <li id="notes:5"><p>The classifiers at every stage of the cascade are complex themselves and built out of basic classifiers (decision trees with at least 2 leaves) using a boosting technique (weighted voting), e.g., one of the multiple variants of Adaboost. <a href="#fnref:5" title="Return to article" class="reversefootnote">↩</a></p></li>
-                    </ol>
                 </div>
             </div>
         </div>
