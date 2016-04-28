@@ -1,5 +1,5 @@
  
-function queryDynamoDB(rangeStr) {
+function queryDynamoDB(start, end, RPiName, RPiDataType) {
 	// Cleaning bar chart area
 	var list = document.getElementById("chart_div");
 	while (list.hasChildNodes()) {   
@@ -7,14 +7,12 @@ function queryDynamoDB(rangeStr) {
 	}
 	document.getElementById("myV").src = "splash.mp4";
 
-	var fullData = {'FOREGROUND': [], 'FACE_COUNT_DTL': [], 'FACE_COUN_UNIQ_DTL': []};
+	var fullData = {'FOREGROUND': [], 'FACE_COUNT_DTL': []};
 	var dataLength = 10000;			// Number of records to fetch from DynamoDB
 	
-	var rangeStr = document.getElementById("dtPicker").value;
 	var RPiName = document.getElementById("RPiNameSelect").value;
-	var rangeStrSplit = rangeStr.split(' - ');
-	var startTimestamp = Date.parse(rangeStrSplit[0]) / 1000;	// divide by 1000 to get seconds
-	var endTimestamp = Date.parse(rangeStrSplit[1]) / 1000; 
+	var startTimestamp = start;	// divide by 1000 to get seconds
+	var endTimestamp = end; 
 	endTimestamp += 10; 
 
 	// Storing startTimestamp for default video play
