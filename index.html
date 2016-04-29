@@ -371,7 +371,33 @@
                 </div>
                 <div class="col-lg-10 text-center" id="calendar_basic" align="center"></div>
                 <div class="col-lg-10 text-center" id="chart_div" align="center"></div>
-                
+            </div>
+            <div class="row col-lg-12 col-md-offset-1">
+                <p class="section-subheading text-muted">
+                    <br>
+                    <h5>User Interface help:</h5>
+                    <ul class="section-subheading text-muted">
+                        <li>Use Location drop-down to select Raspberry Pi camera</li>
+                        <li>Use Live Video drop-down to watch live video feeds directly from Raspberry Pi camera</li>
+                        <li>Calendar Chart:
+                            <ul>
+                                <li>Shows motion detected by the selected camera for the whole year. Each cell represents 1 day</li>
+                                <li>Mouse-over shows number of seconds in a day when motion was detected</li>
+                                <li>Click on a cell to see bar charts for that day</li>
+                            </ul>
+                        </li>
+                        <li>Bar Chart:
+                            <ul>
+                                <li>Each bar represents 1 second</li>
+                                <li>Click and drag to drilldown. Right-click to return</li>
+                                <li>Mouse-over shows Neural Net image classification, Foreground size, Number of human faces</li>
+                            </ul>
+                        </li>
+                        <li>Recorded videos are streamed from AWS S3</li>
+                        <li>Live video feeds are streamed directly from Raspberry Pi via a Python Flask based webserver</li>
+                        <li>Data for calendar and bar charts are queried from AWS DynamoDB</li>
+                    </ul>
+                </p>
             </div>
         </div>
     </section>
