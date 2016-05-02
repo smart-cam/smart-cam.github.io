@@ -714,16 +714,12 @@
     <script src="MIDS_js/dynamo_caller.js"></script>
     <script src="MIDS_js/ui_control.js"></script>
     <script type="text/javascript">
-    $(function() {
-        $('input[name="daterange"]').daterangepicker({
-            timePicker: true,
-            timePickerIncrement: 5,
-            //autoUpdateInput: true,
-            locale: {
-                format: 'MM/DD/YYYY h:mm A'
-            }
-        });
-    });
+        //google.charts.load('current', {packages: ['corechart', 'line']});
+        if( navigator.userAgent.toLowerCase().indexOf('chrome') > -1 ){
+        // Do something in Chrome
+        } else {
+            alert("This website works best in Chrome browser");
+        }
     </script>
 
     <meta charset="utf-8">
