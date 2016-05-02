@@ -33,7 +33,7 @@ function queryDynamoDB(start, end, RPiName, RPiDataType) {
 				},
 				'KeyConditionExpression': 'RASP_NAME = :RN AND START_TIME BETWEEN :ST AND :ET',
 				//'Limit': 10,
-				'ProjectionExpression': 'RASP_NAME, START_TIME, #FIELD, CLASSIFICATION',
+				'ProjectionExpression': 'RASP_NAME, START_TIME, #FIELD, CLASSIFICATION, FACES',
 			};
 
 			table.query(params, function(err, data) {
@@ -83,6 +83,12 @@ function queryDynamoDB(start, end, RPiName, RPiDataType) {
 				var classification = "";
 			}
 
+			if (typeof data[i].FACES !== "undefined") {
+				var facesRecog = "Face Recognition: " + data[i].FACES.S + "\n";
+			} else {
+				var facesRecog = "";
+			}
+
 			videoTimestamp = parseInt(videoTimestamp) + 1;
 			//console.log(videoTimestamp);
 			if (typeof data[i][RPiDataType] !== "undefined") {
@@ -97,7 +103,7 @@ function queryDynamoDB(start, end, RPiName, RPiDataType) {
 				var ts = new Date(videoTimestamp);
 				var di = Number(dataArray[j].S);
 				var tt = "";
-				tt = "Data: " + di + "\n" + classification + ts;
+				tt = "Data: " + di + "\n" + classification + facesRecog + ts;
 				dataForLineGraph.push([ts, di, tt]);
 				videoTimestamp += 1000;
 			}
